@@ -1,0 +1,15 @@
+C:\Users\spaul\OneDrive\Desktop\C-sharp-2\puzzles\obj\Debug\net6.0\puzzles.csproj.AssemblyReference.cache
+C:\Users\spaul\OneDrive\Desktop\C-sharp-2\puzzles\obj\Debug\net6.0\puzzles.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\spaul\OneDrive\Desktop\C-sharp-2\puzzles\obj\Debug\net6.0\puzzles.AssemblyInfoInputs.cache
+C:\Users\spaul\OneDrive\Desktop\C-sharp-2\puzzles\obj\Debug\net6.0\puzzles.AssemblyInfo.cs
+C:\Users\spaul\OneDrive\Desktop\C-sharp-2\puzzles\obj\Debug\net6.0\puzzles.csproj.CoreCompileInputs.cache
+C:\Users\spaul\OneDrive\Desktop\C-sharp-2\puzzles\bin\Debug\net6.0\puzzles.exe
+C:\Users\spaul\OneDrive\Desktop\C-sharp-2\puzzles\bin\Debug\net6.0\puzzles.deps.json
+C:\Users\spaul\OneDrive\Desktop\C-sharp-2\puzzles\bin\Debug\net6.0\puzzles.runtimeconfig.json
+C:\Users\spaul\OneDrive\Desktop\C-sharp-2\puzzles\bin\Debug\net6.0\puzzles.dll
+C:\Users\spaul\OneDrive\Desktop\C-sharp-2\puzzles\bin\Debug\net6.0\puzzles.pdb
+C:\Users\spaul\OneDrive\Desktop\C-sharp-2\puzzles\obj\Debug\net6.0\puzzles.dll
+C:\Users\spaul\OneDrive\Desktop\C-sharp-2\puzzles\obj\Debug\net6.0\refint\puzzles.dll
+C:\Users\spaul\OneDrive\Desktop\C-sharp-2\puzzles\obj\Debug\net6.0\puzzles.pdb
+C:\Users\spaul\OneDrive\Desktop\C-sharp-2\puzzles\obj\Debug\net6.0\puzzles.genruntimeconfig.cache
+C:\Users\spaul\OneDrive\Desktop\C-sharp-2\puzzles\obj\Debug\net6.0\ref\puzzles.dll
