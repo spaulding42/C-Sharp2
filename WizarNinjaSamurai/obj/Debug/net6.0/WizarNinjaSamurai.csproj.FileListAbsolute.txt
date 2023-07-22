@@ -1,0 +1,15 @@
+C:\Users\spaul\OneDrive\Desktop\C-sharp-2\Backup\C-Sharp2\WizarNinjaSamurai\bin\Debug\net6.0\WizarNinjaSamurai.exe
+C:\Users\spaul\OneDrive\Desktop\C-sharp-2\Backup\C-Sharp2\WizarNinjaSamurai\bin\Debug\net6.0\WizarNinjaSamurai.deps.json
+C:\Users\spaul\OneDrive\Desktop\C-sharp-2\Backup\C-Sharp2\WizarNinjaSamurai\bin\Debug\net6.0\WizarNinjaSamurai.runtimeconfig.json
+C:\Users\spaul\OneDrive\Desktop\C-sharp-2\Backup\C-Sharp2\WizarNinjaSamurai\bin\Debug\net6.0\WizarNinjaSamurai.dll
+C:\Users\spaul\OneDrive\Desktop\C-sharp-2\Backup\C-Sharp2\WizarNinjaSamurai\bin\Debug\net6.0\WizarNinjaSamurai.pdb
+C:\Users\spaul\OneDrive\Desktop\C-sharp-2\Backup\C-Sharp2\WizarNinjaSamurai\obj\Debug\net6.0\WizarNinjaSamurai.csproj.AssemblyReference.cache
+C:\Users\spaul\OneDrive\Desktop\C-sharp-2\Backup\C-Sharp2\WizarNinjaSamurai\obj\Debug\net6.0\WizarNinjaSamurai.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\spaul\OneDrive\Desktop\C-sharp-2\Backup\C-Sharp2\WizarNinjaSamurai\obj\Debug\net6.0\WizarNinjaSamurai.AssemblyInfoInputs.cache
+C:\Users\spaul\OneDrive\Desktop\C-sharp-2\Backup\C-Sharp2\WizarNinjaSamurai\obj\Debug\net6.0\WizarNinjaSamurai.AssemblyInfo.cs
+C:\Users\spaul\OneDrive\Desktop\C-sharp-2\Backup\C-Sharp2\WizarNinjaSamurai\obj\Debug\net6.0\WizarNinjaSamurai.csproj.CoreCompileInputs.cache
+C:\Users\spaul\OneDrive\Desktop\C-sharp-2\Backup\C-Sharp2\WizarNinjaSamurai\obj\Debug\net6.0\WizarNinjaSamurai.dll
+C:\Users\spaul\OneDrive\Desktop\C-sharp-2\Backup\C-Sharp2\WizarNinjaSamurai\obj\Debug\net6.0\refint\WizarNinjaSamurai.dll
+C:\Users\spaul\OneDrive\Desktop\C-sharp-2\Backup\C-Sharp2\WizarNinjaSamurai\obj\Debug\net6.0\WizarNinjaSamurai.pdb
+C:\Users\spaul\OneDrive\Desktop\C-sharp-2\Backup\C-Sharp2\WizarNinjaSamurai\obj\Debug\net6.0\WizarNinjaSamurai.genruntimeconfig.cache
+C:\Users\spaul\OneDrive\Desktop\C-sharp-2\Backup\C-Sharp2\WizarNinjaSamurai\obj\Debug\net6.0\ref\WizarNinjaSamurai.dll
