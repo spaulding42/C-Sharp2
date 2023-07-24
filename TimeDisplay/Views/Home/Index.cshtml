@@ -1,0 +1,21 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <div class="d-flex">
+        <div >
+            <div>Start Time</div>
+            <div>@ViewBag.CurrentTime</div>
+        </div>
+        <div>
+            <div>End Time</div>
+            <div>@ViewBag.EndTime</div>
+        </div>
+    </div>
+    <div>
+        <div>Time Remaining</div>
+        <div>@ViewBag.DifOfDates.Days Days, @ViewBag.DifOfDates.Hours Hours, @ViewBag.DifOfDates.Minutes Minutes, @ViewBag.DifOfDates.Seconds Seconds</div>
+    </div>
+</div>
