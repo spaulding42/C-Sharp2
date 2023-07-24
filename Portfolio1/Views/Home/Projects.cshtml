@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="~/css/style.css" />
+
+<h1>Here are some of my cool projects yo!</h1>
+
+<h2>@ViewBag.projNames[0]</h2>
+<img src="@ViewBag.imgUrls[0]" alt="oops" class="homePic" />
+<p>@ViewBag.descriptions[0]</p>
+
+<h2>@ViewBag.projNames[1]</h2>
+<img src="@ViewBag.imgUrls[1]" alt="oops" class="homePic" />
+<p>@ViewBag.descriptions[1]</p>
+
+<h2>@ViewBag.projNames[2]</h2>
+<img src="@ViewBag.imgUrls[2]" alt="oops" class="homePic" />
+<p>@ViewBag.descriptions[2]</p>
+
+@* @for(int i = 0; i < ViewBag.projNames.Count; i++)
+{
+    <h2>@ViewBag.projNames[i]</h2>
+    <img src="@ViewBag.imgUrls[i]" alt="oops" class="homePic" />
+    <p>@ViewBag.descriptions[i]</p>
+} *@
