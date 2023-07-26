@@ -1,0 +1,36 @@
+*{
+    font-family: roboto;
+    color: white;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #333333;
+}
+
+.nav-title{
+    margin-left: 20px;
+}
+
+.nav-links{
+    display: flex;
+}
+
+.active{
+
+}
+
+.btn{
+    background-color: #17A2B8;
+    box-shadow: 3px 3px black;
+    border: 2px solid black;
+    border-radius: 3px;
+}
+
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+    margin: 5px 10px;
+}

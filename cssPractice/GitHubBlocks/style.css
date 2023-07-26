@@ -1,0 +1,30 @@
+.octocat{
+    height: 200px;
+    margin: 10px;
+}
+.header{
+    text-align: center;
+}
+.main{
+    width: 700px;
+    border: 3px solid black;
+}
+
+.row1{
+    background-color: #68D4FF;
+    justify-content: space-around;
+}
+
+.row2{
+    background-color: #D8A9B7;
+    justify-content: center;
+}
+.row2 > .octocat{
+    margin: 10px 50px;
+}
+
+.row1, .row2, .row3 {
+    margin: 10px;
+    display: flex;
+}
+
