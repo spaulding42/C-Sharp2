@@ -1,0 +1,18 @@
+.row div{
+    padding: 20px;
+    margin: 10px;
+    background-color: #659DA1;
+    color: whitesmoke;
+}
+.row {
+    display: flex;
+}
+.col {
+    flex: 1;
+}
+.col-2{
+    flex: 2;
+}
+.col-3{
+    flex:3;
+}

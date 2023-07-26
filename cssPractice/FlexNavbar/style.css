@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-between;
     background-color: #333333;
+    align-items: center;
 }
 
 .nav-title{
@@ -17,7 +18,7 @@
 }
 
 .active{
-
+    font-weight: bold;
 }
 
 .btn{

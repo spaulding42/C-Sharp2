@@ -1,0 +1,38 @@
+*{
+    font-family: roboto;
+    font-weight: bold;
+}
+.header{
+    background-color: #17A2B8;
+    height: 100px;
+    width: auto;
+}
+.profilePic{
+    width: 100px;
+    height: auto;
+    margin: 50px;
+}
+.profile{
+    margin: 50px;
+}
+.location{
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.pinPic{
+    height: 15px;
+    width: auto;
+    margin-right: 10px;
+}
+.gear{
+    height: 15px;
+    width: auto;
+}
+.edit-profile{
+    margin-top: 10px;
+}
+
+.name{
+    font-size: 200%;
+}

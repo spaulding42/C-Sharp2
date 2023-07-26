@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- HEADER -->
+    <div class="nav">
+        <div class="nav-left d-flex">
+            <h1 class="nav-title">Profile</h1>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#" class="active">My Profile</a></li>
+                <li><a href="#">Find Connections</a></li>
+            </ul>
+        </div>
+        <li><button class="btn">Sign Out</button></li>
+    </div>
+    <!-- Main Content -->
+    <div class="main">
+        <!-- LEFT SIDE -->
+        <div class="left-column">
+            <div class="user-card">
+                <div class="header">
+                    <img src="icons\user-circle.png" alt="user circle" class = "profilePic">
+                </div>
+                <div class="profile">
+                    <div class="name"> Jane Doe</div>
+                    <div class="location">
+                        <img src="icons\map-marker.png" alt="map marker" class="pinPic">
+                        <div>Seattle</div>
+                    </div>
+                    <div class="skills">Developer | Engineer | Problem Solver</div>
+                    <div>Master of shadows and the internet!</div>
+                    <div class="edit-profile">
+                        <img src="icons\gear.png" alt="gear" class="gear">
+                        <a href="#" class="edit">edit profile</a>
+                    </div>
+                </div>
+            </div>
+            <div class="education">
+                <div class="education-header dark-light">Education</div>
+                <div class="education-info border">
+                    <div class="dojo">Coding Dojo - Full Stack Bootcamp</div>
+                    <div class="date">Dec 2019 - Mar 2020</div>
+                    <div class="belts">Triple black belt in Python, MERN, and C#</div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- RIGHT SIDE -->
+        <div class="right-column">
+            <div class="requests">
+                <div class="request-header dark-light d-flex">
+                    <div class="request-num"> 2</div>
+                    <div>Connection Requests</div>
+                </div>
+                <div class="requests-list border">
+                    <div class="request-name">
+                        <div class="request-left d-flex">
+                            <img src="icons\user-circle.png" alt="anon pic" class="small-pic">
+                            <div class="connection-name">Todd E</div>
+                        </div>
+                        <div class="request-right">
+                            <img src="icons\accept-circle.png" alt="check" class = "approve-pic">
+                            <img src="icons\close-circle.png" alt="close" class = "approve-pic">
+                        </div>
+                    </div>
+                    <div class="request-name">
+                        <div class="request-left d-flex">
+                            <img src="icons\user-circle.png" alt="anon pic" class="small-pic">
+                            <div class="connection-name">Phil K</div>
+                        </div>
+                        <div class="request-right">
+                            <img src="icons\accept-circle.png" alt="check" class = "approve-pic">
+                            <img src="icons\close-circle.png" alt="close" class = "approve-pic">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="connections">
+                <div class="connections-header dark-light d-flex">
+                    <div class="current-connections-number">500+</div>
+                    <div>Your Connections</div>
+                </div>
+                <div class="border">
+                    <div class="friend">
+                        <img src="icons\user-circle.png" alt="anon pic" class="small-pic">
+                        <div class="connection-name">Adrien D</div>
+                    </div>
+                    <div class="friend">
+                        <img src="icons\user-circle.png" alt="anon pic" class="small-pic">
+                        <div class="connection-name">Anne J</div>
+                    </div>
+                    <div class="friend">
+                        <img src="icons\user-circle.png" alt="anon pic" class="small-pic">
+                        <div class="connection-name">Alayne T</div>
+                    </div>
+                    <div class="friend">
+                        <img src="icons\user-circle.png" alt="anon pic" class="small-pic">
+                        <div class="connection-name">Arry Y</div>
+                    </div>
+                </div>
+                <a href="#" class="border more"> View More</a>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
