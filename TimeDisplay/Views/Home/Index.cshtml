@@ -1,15 +1,16 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<link rel="stylesheet" href="~/css/style.css">
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <div class="d-flex">
-        <div >
+    <div class="d-flex border">
+        <div class="start">
             <div>Start Time</div>
             <div>@ViewBag.CurrentTime</div>
         </div>
-        <div>
+        <div class= "start">
             <div>End Time</div>
             <div>@ViewBag.EndTime</div>
         </div>

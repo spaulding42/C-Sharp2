@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xSrOHogpM4hvOZjGpujezQ6FoNwjTHVphC4L7ENcNNs=",
+  "Hash": "O6aza0+8dkf0dS8/wD7/3xeie5jzTmtmuQbrPMmwOhM=",
   "Source": "TimeDisplay",
   "BasePath": "_content/TimeDisplay",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\spaul\\OneDrive\\Desktop\\C-sharp-2\\Backup\\C-Sharp2\\TimeDisplay\\wwwroot\\css\\style.css",
+      "SourceId": "TimeDisplay",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\spaul\\OneDrive\\Desktop\\C-sharp-2\\Backup\\C-Sharp2\\TimeDisplay\\wwwroot\\",
+      "BasePath": "_content/TimeDisplay",
+      "RelativePath": "css/style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\style.css"
     },
     {
       "Identity": "C:\\Users\\spaul\\OneDrive\\Desktop\\C-sharp-2\\Backup\\C-Sharp2\\TimeDisplay\\wwwroot\\favicon.ico",

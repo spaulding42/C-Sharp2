@@ -1,0 +1,10 @@
+.start{
+    border: 3px solid black;
+    height: 150px;
+    padding: 20px;
+    margin: 10px;
+}
+.border{
+    border: 3px solid black;
+    justify-content: center;
+}

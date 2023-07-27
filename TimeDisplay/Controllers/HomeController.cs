@@ -16,7 +16,7 @@ public class HomeController : Controller
     public IActionResult Index()
     {
         DateTime currentTime = DateTime.Now;
-        DateTime endTime = new DateTime(2023, 7, 25);
+        DateTime endTime = new DateTime(2023, 7, 28);
         var difOfDates = endTime - currentTime;
 
         ViewBag.CurrentTime = currentTime;
