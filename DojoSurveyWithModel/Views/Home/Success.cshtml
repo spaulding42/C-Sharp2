@@ -1,0 +1,22 @@
+@model Survey
+
+<div class="submission-results">
+    <h1>Submitted Info</h1>
+    <div class="name d-flex">
+        <div>Name: </div>
+        <div>@Model.Name</div>
+    </div>
+    <div class="location">
+        <div>Dojo Location: </div>
+        <div>@Model.Location</div>
+    </div>
+    <div class="language">
+        <div>Favorite Language: </div>
+        <div>@Model.Language</div>
+    </div>
+    <div class="comment">
+        <div>Comment (optional): </div>
+        <div>@Model.Comment</div>
+    </div>
+    <a href="/" class="btn btn-primary">Go Back</a>
+</div>

@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model Survey
+
+<form asp-controller="Home" asp-action="success"  method="post">
+    <div class = "d-flex spacing">
+        <label asp-for="Name"></label>
+
+        @* becomes -->  <span style="color:red" class="field-validation-valid" data-valmsg-replace="true"></span>
+        <input asp-for="Name"> *@
+
+        <input asp-for="Name">
+        <span asp-validation-for="Name" style="color:red"></span> 
+        @* becomes -->  <input type = "text" data-val="true" data-val-minlength="must be at least 2 characters" data-val-minlength-min = "2" data-val-required =" is required." id="Name" name="Name" value> *@
+    </div>
+    <div class = "d-flex spacing">
+        <label asp-for="Location">Dojo Location: </label>
+        <select name="Location" asp-for="Location">
+            <option hidden value="">Choose a location</option>
+            <option value="Burbank">Burbank</option>
+            <option value="San Jose">San Jose</option>
+            <option value="Chicago">Chicago</option>
+            <option value="New York">New York</option>
+        </select>
+        <span asp-validation-for="Location" style="color:red"></span>
+    </div>
+    <div class = "d-flex spacing">
+        <label asp-for="Language">Favorite Language: </label>
+        <select name="Language" asp-for="Language">
+            <option hidden value="">Choose a language</option>
+            <option value="C#">C#</option>
+            <option value="JavaScript">JavaScript</option>
+            <option value="Java">Java</option>
+            <option value="Python">Python</option>
+        </select>
+        <span asp-validation-for="Language" style="color:red"></span>
+    </div>
+    <div class = "spacing">
+        <label asp-for="Comment">Comment (optional): </label>
+        <textarea name = "Comment" rows="5" cols="30" asp-for="Comment"></textarea>
+        <span asp-validation-for="Comment" style="color:red"></span>
+    </div>
+    <button type="submit" class="btn"> Submit </button>
+</form>
