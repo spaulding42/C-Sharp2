@@ -1,0 +1,12 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <div class="stats d-flex">
+        <div class="fullness">Fullness: @Context.Session.GetInt32("Fullness")</div>
+        <div class="happiness">Happiness: @Context.Session.GetInt32("Happiness")</div>
+        <div class="meals">Meals: @Context.Session.GetInt32("Meals")</div>
+        <div class="energy">Energy: @Context.Session.GetInt32("Energy")</div>
+    </div>
+</div>
