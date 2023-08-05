@@ -3,10 +3,31 @@
 }
 
 <div class="text-center">
-    <div class="stats d-flex">
-        <div class="fullness">Fullness: @Context.Session.GetInt32("Fullness")</div>
-        <div class="happiness">Happiness: @Context.Session.GetInt32("Happiness")</div>
-        <div class="meals">Meals: @Context.Session.GetInt32("Meals")</div>
-        <div class="energy">Energy: @Context.Session.GetInt32("Energy")</div>
+    <div class="stats d-flex justify-content-center">
+        <div class="fullness stats">Fullness: @Context.Session.GetInt32("Fullness")</div>
+        <div class="happiness stats">Happiness: @Context.Session.GetInt32("Happiness")</div>
+        <div class="meals stats">Meals: @Context.Session.GetInt32("Meals")</div>
+        <div class="energy stats">Energy: @Context.Session.GetInt32("Energy")</div>
     </div>
+    <div class="results">
+        @if(@Context.Session.GetString("Action") == "alive")
+        {
+            <div>@Context.Session.GetString("Message")</div>
+            <div class="actions">
+                <a href="/dojodachi/feed" class="btn btn-primary">Feed</a> | 
+                <a href="/dojodachi/play" class="btn btn-primary">Play</a> | 
+                <a href="/dojodachi/work" class="btn btn-primary">Work</a> | 
+                <a href="/dojodachi/sleep" class="btn btn-primary">Sleep</a>
+            </div>
+        }
+        else if(@Context.Session.GetString("Action") == "game over"){
+            <div>@Context.Session.GetString("Message")</div>
+            <a href="/dojodachi/new" class="btn btn-primary">Click here to return home</a>
+        }
+   
+       
+
+    </div>
+
+    
 </div>
