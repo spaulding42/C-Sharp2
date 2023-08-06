@@ -1,31 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Dojodachi\\Dojodachi.csproj": {}
+    "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\LinqEruption\\LinqEruption.csproj": {}
   },
   "projects": {
-    "c:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Dojodachi\\Dojodachi.csproj": {
+    "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\LinqEruption\\LinqEruption.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Dojodachi\\Dojodachi.csproj",
-        "projectName": "Dojodachi",
-        "projectPath": "c:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Dojodachi\\Dojodachi.csproj",
+        "projectUniqueName": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\LinqEruption\\LinqEruption.csproj",
+        "projectName": "LinqEruption",
+        "projectPath": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\LinqEruption\\LinqEruption.csproj",
         "packagesPath": "C:\\Users\\MiniMe\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Dojodachi\\obj\\",
+        "outputPath": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\LinqEruption\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MiniMe\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net6.0"
+          "net7.0"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -36,8 +35,8 @@
         }
       },
       "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "imports": [
             "net461",
             "net462",
@@ -50,9 +49,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

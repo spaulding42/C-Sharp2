@@ -1,0 +1,15 @@
+C:\Users\MiniMe\Documents\GitHub\C-Sharp2\LinqEruption\bin\Debug\net7.0\LinqEruption.exe
+C:\Users\MiniMe\Documents\GitHub\C-Sharp2\LinqEruption\bin\Debug\net7.0\LinqEruption.deps.json
+C:\Users\MiniMe\Documents\GitHub\C-Sharp2\LinqEruption\bin\Debug\net7.0\LinqEruption.runtimeconfig.json
+C:\Users\MiniMe\Documents\GitHub\C-Sharp2\LinqEruption\bin\Debug\net7.0\LinqEruption.dll
+C:\Users\MiniMe\Documents\GitHub\C-Sharp2\LinqEruption\bin\Debug\net7.0\LinqEruption.pdb
+C:\Users\MiniMe\Documents\GitHub\C-Sharp2\LinqEruption\obj\Debug\net7.0\LinqEruption.csproj.AssemblyReference.cache
+C:\Users\MiniMe\Documents\GitHub\C-Sharp2\LinqEruption\obj\Debug\net7.0\LinqEruption.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MiniMe\Documents\GitHub\C-Sharp2\LinqEruption\obj\Debug\net7.0\LinqEruption.AssemblyInfoInputs.cache
+C:\Users\MiniMe\Documents\GitHub\C-Sharp2\LinqEruption\obj\Debug\net7.0\LinqEruption.AssemblyInfo.cs
+C:\Users\MiniMe\Documents\GitHub\C-Sharp2\LinqEruption\obj\Debug\net7.0\LinqEruption.csproj.CoreCompileInputs.cache
+C:\Users\MiniMe\Documents\GitHub\C-Sharp2\LinqEruption\obj\Debug\net7.0\LinqEruption.dll
+C:\Users\MiniMe\Documents\GitHub\C-Sharp2\LinqEruption\obj\Debug\net7.0\refint\LinqEruption.dll
+C:\Users\MiniMe\Documents\GitHub\C-Sharp2\LinqEruption\obj\Debug\net7.0\LinqEruption.pdb
+C:\Users\MiniMe\Documents\GitHub\C-Sharp2\LinqEruption\obj\Debug\net7.0\LinqEruption.genruntimeconfig.cache
+C:\Users\MiniMe\Documents\GitHub\C-Sharp2\LinqEruption\obj\Debug\net7.0\ref\LinqEruption.dll

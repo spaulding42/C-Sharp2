@@ -1,0 +1,7 @@
+// new project
+dotnet new mvc --no-https -o ProjectName
+
+// entity framework setup stuff needs to be setup in CMD at the start of the project
+dotnet add package Pomelo.EntityFrameworkCore.MySql --version 6.0.1
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 6.0.3
+
