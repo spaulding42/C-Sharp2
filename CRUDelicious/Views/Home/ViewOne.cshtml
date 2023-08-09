@@ -1,0 +1,10 @@
+
+@model Monster
+
+<div class = "border">
+    <div>Name: @Model.Name</div>
+    <div>Height: @Model.Height</div>
+    <div>Description: @Model.Description</div>
+    <div>Created at: @Model.CreatedAt</div>
+    <a href="/monsters/@Model.MonsterId/edit">Edit</a>
+</div>
