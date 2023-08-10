@@ -17,71 +17,72 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        List<Monster> AllMonsters = db.Monsters.ToList();
-        return View("Index", AllMonsters);
+        List<Dish> AllDishs = db.Dishes.ToList();
+        return View("Index", AllDishs);
     }
     // VIEW ONE 
-    [HttpGet("monsters/{MonsterId}/View")]
-    public IActionResult ViewOne(int MonsterId)
+    [HttpGet("dishes/{DishId}/View")]
+    public IActionResult ViewOne(int DishId)
     {
-        Monster? MonsterToEdit = db.Monsters.FirstOrDefault(i => i.MonsterId == MonsterId);
+        Dish? DishToEdit = db.Dishes.FirstOrDefault(i => i.DishId == DishId);
         // check here to ensure what you are grabbing will not return a null item
-        if(MonsterToEdit == null){
+        if(DishToEdit == null){
             return View("Index");
         }
-        return View("ViewOne", MonsterToEdit);
+        return View("ViewOne", DishToEdit);
     }
 
     // CREATE ONE
-    [HttpGet("/monsters/create")]
+    [HttpGet("/dishes/create")]
     public IActionResult Create()
     {
         return View("Create");
     }
-    [HttpPost("monsters/submit")]
-    public IActionResult SubmitMonster(Monster monster)
+    [HttpPost("dishes/submit")]
+    public IActionResult SubmitDish(Dish Dish)
     {
         if(ModelState.IsValid){
-            db.Monsters.Add(monster);
+            db.Dishes.Add(Dish);
             db.SaveChanges();
-            
+            return RedirectToAction("Index");
         }
-        return RedirectToAction("Index");
+        return View("Create");
     }
 
     // EDIT ONE
-    [HttpGet("monsters/{MonsterId}/edit")]
-    public IActionResult EditMonster(int MonsterId)
+    [HttpGet("dishes/{DishId}/edit")]
+    public IActionResult EditDish(int DishId)
     {
-        Monster? MonsterToEdit = db.Monsters.FirstOrDefault(i => i.MonsterId == MonsterId);
+        Dish? DishToEdit = db.Dishes.FirstOrDefault(i => i.DishId == DishId);
         // check here to ensure what you are grabbing will not return a null item
-        if(MonsterToEdit == null){
+        if(DishToEdit == null){
             return View("Index");
         }
         
-        return View("Edit", MonsterToEdit);
+        return View("Edit", DishToEdit);
     }
 
     // UPDATE ONE
-    [HttpPost("/monsters/{MonsterId}/update")]
-    public IActionResult UpdateMonster(Monster monster)
+    [HttpPost("/dishes/{DishId}/update")]
+    public IActionResult UpdateDish(Dish dish)
     {
         if(ModelState.IsValid){
-            db.Monsters.Update(monster);
+            dish.UpdatedAt = DateTime.Now;
+            db.Dishes.Update(dish);
             db.SaveChanges();
             return RedirectToAction("Index");  
         }
-        return View("Edit", monster);
+        return View("Edit", dish);
     }
 
     // DELETE ONE
-    [HttpGet("/monsters/{MonsterId}/delete")]
-    public IActionResult Delete(int MonsterId)
+    [HttpPost("/dishes/{DishId}/destroy")]
+    public IActionResult Destroy(int DishId)
     {
             Console.WriteLine("DELETING BEEP BEEP BOOP!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
-        Monster? MonsterToDelete = db.Monsters.FirstOrDefault(i => i.MonsterId == MonsterId);
-        if(MonsterToDelete != null){
-            db.Monsters.Remove(MonsterToDelete);
+        Dish? DishToDelete = db.Dishes.FirstOrDefault(i => i.DishId == DishId);
+        if(DishToDelete != null){
+            db.Dishes.Remove(DishToDelete);
             db.SaveChanges();
         }
         return RedirectToAction("Index");

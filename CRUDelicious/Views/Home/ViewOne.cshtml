@@ -1,10 +1,24 @@
 
-@model Monster
+@model Dish
 
-<div class = "border">
-    <div>Name: @Model.Name</div>
-    <div>Height: @Model.Height</div>
+<div class>
+    <h1 class="text-center">@Model.Name</h1>
+    <div class="nav d-flex justify-content-center">
+        <a href="/">Home</a> |
+        <a href="/dishes/create"> Create a dish </a>
+    </div>
+    <div class = "d-flex">
+        <div>@Model.Name</div><div class="space">by @Model.Chef</div>    
+    </div>
+    <div class="dishes">Star-Rating: @Model.Tastiness</div>
+    <div>Calories: @Model.Calories</div>
     <div>Description: @Model.Description</div>
     <div>Created at: @Model.CreatedAt</div>
-    <a href="/monsters/@Model.MonsterId/edit">Edit</a>
+    <div class="actions d-flex">
+        <form action="destroy" method="post" class="margins">
+            <button class="btn btn-danger">Delete</button>
+        </form>
+        <a href="/dishes/@Model.DishId/edit" class="btn btn-success margins">Edit</a> 
+    </div>
+
 </div>

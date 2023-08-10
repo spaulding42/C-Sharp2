@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CRUDelicious.Migrations
 {
     [DbContext(typeof(MyContext))]
-    [Migration("20230807214405_FirstMigration")]
+    [Migration("20230809172902_FirstMigration")]
     partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -21,11 +21,18 @@ namespace CRUDelicious.Migrations
                 .HasAnnotation("ProductVersion", "6.0.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            modelBuilder.Entity("CRUDelicious.Models.Monster", b =>
+            modelBuilder.Entity("CRUDelicious.Models.Dish", b =>
                 {
-                    b.Property<int>("MonsterId")
+                    b.Property<int>("DishId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
+
+                    b.Property<int>("Calories")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Chef")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime(6)");
@@ -34,19 +41,19 @@ namespace CRUDelicious.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<int>("Height")
-                        .HasColumnType("int");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("longtext");
 
+                    b.Property<int>("Tastiness")
+                        .HasColumnType("int");
+
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime(6)");
 
-                    b.HasKey("MonsterId");
+                    b.HasKey("DishId");
 
-                    b.ToTable("Monsters");
+                    b.ToTable("Dishes");
                 });
 #pragma warning restore 612, 618
         }

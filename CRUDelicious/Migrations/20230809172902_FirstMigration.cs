@@ -14,14 +14,17 @@ namespace CRUDelicious.Migrations
                 .Annotation("MySql:CharSet", "utf8mb4");
 
             migrationBuilder.CreateTable(
-                name: "Monsters",
+                name: "Dishes",
                 columns: table => new
                 {
-                    MonsterId = table.Column<int>(type: "int", nullable: false)
+                    DishId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     Name = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
-                    Height = table.Column<int>(type: "int", nullable: false),
+                    Chef = table.Column<string>(type: "longtext", nullable: false)
+                        .Annotation("MySql:CharSet", "utf8mb4"),
+                    Tastiness = table.Column<int>(type: "int", nullable: false),
+                    Calories = table.Column<int>(type: "int", nullable: false),
                     Description = table.Column<string>(type: "longtext", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     CreatedAt = table.Column<DateTime>(type: "datetime(6)", nullable: false),
@@ -29,7 +32,7 @@ namespace CRUDelicious.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Monsters", x => x.MonsterId);
+                    table.PrimaryKey("PK_Dishes", x => x.DishId);
                 })
                 .Annotation("MySql:CharSet", "utf8mb4");
         }
@@ -37,7 +40,7 @@ namespace CRUDelicious.Migrations
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "Monsters");
+                name: "Dishes");
         }
     }
 }

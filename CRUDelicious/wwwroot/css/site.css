@@ -20,3 +20,27 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.dishes{
+  border-top: 2px solid black;
+}
+
+.margins{
+  margin: 5px 50px;
+}
+
+.create-box{
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid black; */
+}
+
+.middle{
+  margin:50px;
+}
+
+.space{
+  margin-left: 5px;
+}

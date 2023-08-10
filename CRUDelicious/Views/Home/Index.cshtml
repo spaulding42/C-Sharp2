@@ -1,21 +1,27 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-@model List<Monster>
+@model List<Dish>
 
 <div class="text-center">
-    <a href="monsters/create">Create a Monster</a>
-    <h1 class="display-4">Here is the list of monsters</h1>
-    @foreach(Monster monster in Model)
-    {
-        <div class = "border">
-            <div>Name: @monster.Name</div>
-            <div>Height: @monster.Height</div>
-            <div>Description: @monster.Description</div>
-            <div>Created at: @monster.CreatedAt</div>
-            <a href="/monsters/@monster.MonsterId/view">View </a> |
-            <a href="/monsters/@monster.MonsterId/edit"> Edit</a> |
-            <a href="/monsters/@monster.MonsterId/delete"> Delete</a>
-        </div>
-    }
+    <h1 class="display-4">Welcome to CRUDelicious</h1>
+    <div class="nav d-flex justify-content-center">
+        <p>Home</p> |
+        <a href="dishes/create"> Create a dish</a>
+    </div>
+    <div>Check out some recent dishes</div>
+    <div class="dishes">
+        @foreach(Dish dish in Model)
+        {
+            <div class = "border d-flex">
+                <div>Name: <a href="/dishes/@dish.DishId/view">@dish.Name</a></div>
+                <div>By: @dish.Chef</div>
+                
+                @* <a href="/dishes/@dish.DishId/view">View </a> |
+                <a href="/dishes/@dish.DishId/edit"> Edit</a> |
+                <a href="/dishes/@dish.DishId/destroy"> Delete</a> *@
+            </div>
+        }
+
+    </div>
 </div>
