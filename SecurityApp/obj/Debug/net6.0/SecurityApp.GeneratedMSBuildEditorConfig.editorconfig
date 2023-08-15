@@ -5,44 +5,45 @@ build_property.UsingMicrosoftNETSdkWeb = true
 build_property.ProjectTypeGuids = 
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SecurityApp
 build_property.RootNamespace = SecurityApp
-build_property.ProjectDir = c:\Users\spaul\OneDrive\Desktop\C-sharp-2\Backup\C-Sharp2\SecurityApp\
+build_property.ProjectDir = c:\Users\MiniMe\Documents\GitHub\C-Sharp2\SecurityApp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\spaul\OneDrive\Desktop\C-sharp-2\Backup\C-Sharp2\SecurityApp
+build_property.MSBuildProjectDirectory = c:\Users\MiniMe\Documents\GitHub\C-Sharp2\SecurityApp
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/spaul/OneDrive/Desktop/C-sharp-2/Backup/C-Sharp2/SecurityApp/Views/Home/Index.cshtml]
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/spaul/OneDrive/Desktop/C-sharp-2/Backup/C-Sharp2/SecurityApp/Views/Home/Privacy.cshtml]
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/spaul/OneDrive/Desktop/C-sharp-2/Backup/C-Sharp2/SecurityApp/Views/Inventory/Inventory.cshtml]
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Inventory/Inventory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XEludmVudG9yeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/spaul/OneDrive/Desktop/C-sharp-2/Backup/C-Sharp2/SecurityApp/Views/Shared/Error.cshtml]
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/spaul/OneDrive/Desktop/C-sharp-2/Backup/C-Sharp2/SecurityApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/spaul/OneDrive/Desktop/C-sharp-2/Backup/C-Sharp2/SecurityApp/Views/_ViewImports.cshtml]
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/spaul/OneDrive/Desktop/C-sharp-2/Backup/C-Sharp2/SecurityApp/Views/_ViewStart.cshtml]
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/spaul/OneDrive/Desktop/C-sharp-2/Backup/C-Sharp2/SecurityApp/Views/Shared/_Layout.cshtml]
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-zauwnvm9ur

@@ -5,7 +5,13 @@ namespace SecurityApp.Models;
 public class Address 
 {
     [Required]
+    [Key]
     public int AddressID {get; set; }
+
+    [Required]
+    public int CustomerID {get; set; }
+
+
     [Required(ErrorMessage ="Street Address is required")]
     [MinLength(3,ErrorMessage ="Address must be 3 or more characters")]
     public string Line1 {get; set; }

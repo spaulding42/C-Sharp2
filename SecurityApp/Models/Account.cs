@@ -5,7 +5,7 @@ public class Account
 {
     public int AccountID {get; set; }
     public string AccountPassword {get; set; }
-    public DateTime ContractStart {get; set; }
+    public DateTime ContractStart {get; set; } = DateTime.Now;
     public DateTime ContractEnd {get; set; }
     public Customer CustomerData {get; set; }
     public Salesman Sales {get; set; }

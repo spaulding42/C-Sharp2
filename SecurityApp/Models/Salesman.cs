@@ -1,14 +1,21 @@
+using System.ComponentModel.DataAnnotations;
+
 namespace SecurityApp.Models;
 #pragma warning disable CS8618
 
-public class Salesman : Person
+public class Salesman
 {
+    [Key]
     public int SalesID {get; set; }
-    public int SaleCount {get; set; } = 0;
-    public List<Account> Sales = new List<Account>();
+    public string FirstName {get; set; }
+    public string LastName {get; set; }
+    public string Email {get; set; }
 
-    public Salesman(string firstName, string lastName, string email ) : base(firstName,lastName,email)
+    
+    public List<Account> Sales = new List<Account>();
+    public int SaleCount()
     {
-        
+        return Sales.Count;
     }
 }
+
