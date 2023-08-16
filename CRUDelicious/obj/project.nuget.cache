@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JD6E3vwCLIb6Ib7wnkhtFQOtP4rrHe87841b8UtU3e3kwwaem77hp6ByfmgPMV6d21C0E8Bc2kGBAQdV9Bwoyg==",
+  "dgSpecHash": "Pnngo+sY3FPt3/atMdFcjMJlqCGjvvNE3lzas6DLnL5AxxkVe0+VWAreudmqp4lAbvt7Y0WV5lGPlyKaUgcGzw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\CRUDelicious\\CRUDelicious.csproj",
+  "projectFilePath": "c:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\CRUDelicious\\CRUDelicious.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MiniMe\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\MiniMe\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.3\\microsoft.entityframeworkcore.6.0.3.nupkg.sha512",
