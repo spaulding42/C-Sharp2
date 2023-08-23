@@ -1,0 +1,47 @@
+@model User
+<h1 class="text-center">Register</h1>
+<p class="text-center">All fields required</p>
+<form asp-controller="Users" asp-action="Register"  method="post" class="create-box">
+    
+    <div class = "d-flex">
+        <label asp-for="FirstName">First Name: </label>
+        <span asp-validation-for="FirstName" style="color: red"></span>
+    </div>
+    <input asp-for="FirstName">
+
+    <div class = "d-flex">
+        <label asp-for="LastName">Last Name: </label>
+        <span asp-validation-for="LastName" style="color:red"></span>
+    </div>
+    <input asp-for="LastName">
+
+    <div class = "d-flex">
+        <label asp-for="Email">Email: </label>
+        <span asp-validation-for="Email" style="color: red"></span>
+    </div>
+    <input asp-for="Email">    
+
+
+    <select name="Role" asp-for="Role" class="d-flex margin-top">
+            <option hidden value="">Role:</option>
+            <option value="Salesman">Salesman</option>
+            <option value="Technician">Technician</option>
+            <option value="Customer">Customer</option>
+    </select>
+    <span asp-validation-for="Role" style="color: red"></span>
+
+    
+    <div class = "d-flex">
+        <label asp-for="Password">Password: </label>
+        <span asp-validation-for="Password" style="color: red"></span>
+    </div>
+    <input asp-for="Password">  
+    <div class = "d-flex">
+        <label asp-for="ConfirmPassword">Confirm Password: </label>
+        <span asp-validation-for="ConfirmPassword" style="color: red"></span>
+    </div>
+    <input asp-for="ConfirmPassword">  
+        
+        <button type="submit" class="btn btn-primary buttons"> Submit </button>
+    </div>
+</form>

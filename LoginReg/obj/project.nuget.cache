@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fJEYFc++KSrBlgPR5AGZcEO3jEU9Nf5XoKs+vCvRZrQstvS6Od/PE9aChpogScIZjqJjlusDPMiZZNJiLyYZ8Q==",
+  "dgSpecHash": "K8CD1OMZa5hSmbLOU8lZhectIr3qCcOVnAkPTBXufDPLGodor/UBoiDFN2YYb6TDVZ5v9cF5fK6vy03oWvRb7g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\LoginReg\\LoginReg.csproj",
+  "projectFilePath": "c:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\LoginReg\\LoginReg.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MiniMe\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\MiniMe\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.3\\microsoft.entityframeworkcore.6.0.3.nupkg.sha512",

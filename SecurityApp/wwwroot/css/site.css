@@ -16,3 +16,23 @@ html {
 body {
   margin-bottom: 60px;
 }
+.middle{
+  margin: 200px 20px;
+  width: 50px;  
+}
+
+.login-box{
+  width: 300px;
+  padding: 20px;
+  border:3px solid #0D6EFD;
+  box-shadow: 7px 10px darkblue;
+  border-radius: 20px;
+}
+
+.buttons{
+  margin:5px;
+}
+
+.margin-top{
+  margin-top: 10px;
+}

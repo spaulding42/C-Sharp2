@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\SecurityApp.csproj": {}
+    "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\SecurityApp.csproj": {}
   },
   "projects": {
-    "c:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\SecurityApp.csproj": {
+    "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\SecurityApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\SecurityApp.csproj",
+        "projectUniqueName": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\SecurityApp.csproj",
         "projectName": "SecurityApp",
-        "projectPath": "c:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\SecurityApp.csproj",
+        "projectPath": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\SecurityApp.csproj",
         "packagesPath": "C:\\Users\\MiniMe\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\obj\\",
+        "outputPath": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MiniMe\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,6 +38,18 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\LoginReg\\LoginReg.csproj": {}
+    "c:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\LoginReg\\LoginReg.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\LoginReg\\LoginReg.csproj": {
+    "c:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\LoginReg\\LoginReg.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\LoginReg\\LoginReg.csproj",
+        "projectUniqueName": "c:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\LoginReg\\LoginReg.csproj",
         "projectName": "LoginReg",
-        "projectPath": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\LoginReg\\LoginReg.csproj",
+        "projectPath": "c:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\LoginReg\\LoginReg.csproj",
         "packagesPath": "C:\\Users\\MiniMe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\LoginReg\\obj\\",
+        "outputPath": "c:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\LoginReg\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MiniMe\\AppData\\Roaming\\NuGet\\NuGet.Config"

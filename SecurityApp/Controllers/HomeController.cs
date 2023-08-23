@@ -6,18 +6,27 @@ namespace SecurityApp.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
-
-    public HomeController(ILogger<HomeController> logger)
+    private MyContext db;
+    public HomeController (MyContext DB)
     {
-        _logger = logger;
+        db = DB;
     }
 
-    public IActionResult Index()
+    [HttpGet("/dashboard")]
+    public IActionResult Dashboard()
     {
-        return View();
-    }
+        if (HttpContext.Session.GetInt32("UUID") == null) 
+        {
+            return RedirectToAction("Index", "Users");
+        }
+        User? loggedUser = db.Users.FirstOrDefault(x => x.UserId == HttpContext.Session.GetInt32("UUID"));
 
+        // generate a list of all accounts with the UserID == Account.TechID
+
+        return View("Dashboard", loggedUser);
+    }
+    
+    // pre programmed stuff
     public IActionResult Privacy()
     {
         return View();

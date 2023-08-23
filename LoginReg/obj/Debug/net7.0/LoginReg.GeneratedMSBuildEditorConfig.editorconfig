@@ -9,49 +9,49 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = LoginReg
 build_property.RootNamespace = LoginReg
-build_property.ProjectDir = C:\Users\MiniMe\Documents\GitHub\C-Sharp2\LoginReg\
+build_property.ProjectDir = c:\Users\MiniMe\Documents\GitHub\C-Sharp2\LoginReg\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\MiniMe\Documents\GitHub\C-Sharp2\LoginReg
+build_property.MSBuildProjectDirectory = c:\Users\MiniMe\Documents\GitHub\C-Sharp2\LoginReg
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/LoginReg/Views/Home/Privacy.cshtml]
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/LoginReg/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/LoginReg/Views/Home/Success.cshtml]
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/LoginReg/Views/Home/Success.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdWNjZXNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/LoginReg/Views/Shared/Error.cshtml]
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/LoginReg/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/LoginReg/Views/Shared/_ValidationScriptsPartial.cshtml]
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/LoginReg/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/LoginReg/Views/Users/Index.cshtml]
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/LoginReg/Views/Users/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/LoginReg/Views/Users/_Login.cshtml]
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/LoginReg/Views/Users/_Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcX0xvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/LoginReg/Views/Users/_Register.cshtml]
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/LoginReg/Views/Users/_Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcX1JlZ2lzdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/LoginReg/Views/_ViewImports.cshtml]
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/LoginReg/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/LoginReg/Views/_ViewStart.cshtml]
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/LoginReg/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/LoginReg/Views/Shared/_Layout.cshtml]
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/LoginReg/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-w81lvbtrrz
