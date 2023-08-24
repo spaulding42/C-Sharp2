@@ -20,5 +20,8 @@ public class Account
     
     public string? TechID {get; set; }
     
+    // props not going into DB
     public List<Item> ItemList = new List<Item>();
+    public Customer customer{get; set; }
+    
 }
