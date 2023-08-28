@@ -5,12 +5,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SecurityApp.Models;
 
-[NotMapped]
+
 public class Customer 
 {
 
     [Key]
-    public int CustomerID {get; set; }
+    public int CustomerId {get; set; }
 
     [Required(ErrorMessage ="is required")]
     [MinLength(2,ErrorMessage ="must be 2 or more characters")]
@@ -34,4 +34,9 @@ public class Customer
     public string State {get; set; }
     [Required]
     public int Zip {get; set; }
+    
+    public bool Assigned {get; set;} = false;
+    
+    public DateTime CreatedAt {get; set; } = DateTime.Now;
+    public DateTime UpdatedAt {get; set; } 
 }

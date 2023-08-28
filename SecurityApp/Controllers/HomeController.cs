@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SecurityApp.Models;
 
 namespace SecurityApp.Controllers;
@@ -19,12 +20,30 @@ public class HomeController : Controller
         {
             return RedirectToAction("Index", "Users");
         }
-        User? loggedUser = db.Users.FirstOrDefault(x => x.UserId == HttpContext.Session.GetInt32("UUID"));
+        User? loggedUser = db.Users.FirstOrDefault(x => x.RoleId == HttpContext.Session.GetInt32("UUID"));
 
-        // generate a list of all accounts with the UserID == Account.TechID
+        //Re-Route to the proper dashboard depending on the user Role logged in        
+        if(loggedUser != null)
+        {
+            if (loggedUser.Role == "Salesman")
+            {
+                return RedirectToAction("SalesmanDashboard", "Salesman");
+            }
+            if (loggedUser.Role == "Technician")
+            {
+                return RedirectToAction("TechnicianDashboard", "Technician");
+            }
+            if (loggedUser.Role == "Inventory")
+            {
+                return RedirectToAction("InventoryDashboard", "Inventory");
+            }
+        }
 
-        return View("Dashboard", loggedUser);
+        // if the managed to log in but don't match the 3 role options then return to login screen
+        return RedirectToAction("Logout", "Users");
     }
+    
+
     
     // pre programmed stuff
     public IActionResult Privacy()

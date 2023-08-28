@@ -1,0 +1,43 @@
+@model Account
+<h1>Create Account</h1>
+<p>CustomerID: @Context.Session.GetInt32("CID"), @Context.Session.GetString("CXName")</p>
+
+
+<form asp-controller="Home" asp-action="RegisterAccount"  method="post" class="create-box">
+    
+    <div class = "d-flex">
+        <label asp-for="AccountPassword">Password: </label>
+        <span asp-validation-for="AccountPassword" style="color: red"></span>
+    </div>
+    <input asp-for="AccountPassword">
+
+    <div class = "d-flex">
+        <label asp-for="ContractStart">Start Date: </label>
+        <span asp-validation-for="ContractStart" style="color:red"></span>
+    </div>
+    <input asp-for="ContractStart">
+
+    <div class = "d-flex">
+        <label asp-for="ContractEnd">Contract End Date: </label>
+        <span asp-validation-for="ContractEnd" style="color: red"></span>
+    </div>
+    <input asp-for="ContractEnd">    
+
+    <div class = "d-flex">
+        <label asp-for="CustomerId">Customer ID: </label>
+        <span asp-validation-for="CustomerId" style="color: red"></span>
+    </div>
+    <input asp-for="CustomerId" value='@Context.Session.GetInt32("CID")'> 
+    
+    
+    <div class = "d-flex">
+        <label asp-for="SalesId">Sales ID: </label>
+        <span asp-validation-for="SalesId" style="color: red"></span>
+    </div>
+    <input asp-for="SalesId" value='@Context.Session.GetInt32("UUID")'> 
+    
+
+        
+        <button type="submit" class="btn btn-primary buttons"> Submit </button>
+    </div>
+</form>

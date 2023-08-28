@@ -1,12 +1,14 @@
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SecurityApp.Models;
 #pragma warning disable CS8618
 
-[NotMapped]
+
 public class Account
 {
-    public int AccountID {get; set; }
+    [Key]
+    public int AccountId {get; set; }
     
     public string AccountPassword {get; set; }
     
@@ -14,14 +16,29 @@ public class Account
     
     public DateTime ContractEnd {get; set; }
     
-    public string CustomerID {get; set; }
+    public bool Installed {get; set; } = false;
     
-    public string SalesID {get; set; }
+    public DateTime CreatedAt {get; set; } = DateTime.Now;
+
+    public DateTime UpdatedAt {get; set; } = DateTime.Now;
     
-    public string? TechID {get; set; }
+
+    // Relationship props
     
-    // props not going into DB
     public List<Item> ItemList = new List<Item>();
-    public Customer customer{get; set; }
     
-}
+    
+    public int CustomerId {get; set; }
+    public Customer? customer{ get; set; }
+    
+    
+    public int? TechId {get; set; }
+    [NotMapped]
+    public User? tech { get; set; }
+    
+    
+    public int SalesId {get; set; }
+    [NotMapped]
+    public User? salesman { get; set; }
+
+} 

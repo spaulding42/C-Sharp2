@@ -48,14 +48,14 @@ public class UsersController : Controller
                 // now we can add it into the DB
                 db.Users.Add(newUser);
                 db.SaveChanges();
-                HttpContext.Session.SetInt32("UUID", newUser.UserId);
+                HttpContext.Session.SetInt32("UUID", (int)newUser.RoleId);
                 return RedirectToAction("Dashboard","Home");
             }
 
             // if we found a user with the email entered that means they are already in the DB and shouldn't be added again
             if(dbUser != null)
             {
-                // Add an error to ModelState and return to View!
+                // Add an error to ModelState and return to View!z
                 ModelState.AddModelError("Email", "already in use");
             }
         }
@@ -87,7 +87,7 @@ public class UsersController : Controller
                 ModelState.AddModelError("LoginEmail", "invalid Email/Password");
                 return View("Index");
             }
-            HttpContext.Session.SetInt32("UUID", dbUser.UserId);
+            HttpContext.Session.SetInt32("UUID", (int)dbUser.RoleId);
             return RedirectToAction("Dashboard", "Home");
         }
         return View("Index");

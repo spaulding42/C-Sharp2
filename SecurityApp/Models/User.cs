@@ -4,6 +4,7 @@ namespace SecurityApp;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using SecurityApp.Models;
 
 public class User
 {
@@ -38,4 +39,7 @@ public class User
 
     public DateTime CreatedAt {get; set;} = DateTime.Now;
     public DateTime UpdatedAt {get; set;} = DateTime.Now;
+
+    [NotMapped]
+    public List<Account> accounts{get; set;} = new List<Account>();
 }
