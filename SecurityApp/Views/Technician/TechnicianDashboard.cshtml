@@ -1,0 +1,28 @@
+@model User
+<h1>Welcome @Model.FirstName</h1>
+
+<p>Role: @Model.Role</p>
+<p>@Model.Role ID: @Model.RoleId</p>
+<p>Install Count: @Model.accounts.Count</p>
+<a href="/install/new">New Install</a>
+
+
+<table>
+    <tr>
+        <th>AR# </th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>City</th>
+        <th>State</th>
+    </tr>
+    @foreach(Account accnt in @Model.accounts)
+    {
+        <tr>
+            <td>@accnt.AccountId</td>
+            <td>@accnt.customer.FirstName</td>
+            <td>@accnt.customer.LastName</td>
+            <td>@accnt.customer.City</td>
+            <td>@accnt.customer.State</td>
+        </tr>
+    }
+</table>

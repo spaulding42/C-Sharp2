@@ -1,8 +1,8 @@
 @model Customer
 
-<h1 class="text-center">Add Customer</h1>
+<h1 class="text-center">Edit @Model.FirstName @Model.LastName</h1>
 <p class="text-center">All fields required</p>
-<form asp-controller="Home" asp-action="SubmitCustomer"  method="post" class="create-box">
+<form asp-controller="Salesman" asp-action="UpdateCustomer"  asp-route-customerId = "@Model.CustomerId" method="post" class="create-box">
     
     <div class = "d-flex">
         <label asp-for="FirstName">First Name: </label>
@@ -53,6 +53,6 @@
     <input asp-for="Zip"> 
     
         
-        <button type="submit" class="btn btn-primary buttons"> Next </button>
+        <button type="submit" class="btn btn-primary buttons"> Update </button>
     </div>
 </form>

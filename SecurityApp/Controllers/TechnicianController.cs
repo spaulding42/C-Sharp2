@@ -32,6 +32,12 @@ public class TechnicianController : Controller
                 loggedUser.accounts = InstalledAccounts;
             }
         }
-        return View("Technician", loggedUser);
+        return View("TechnicianDashboard", loggedUser);
+    }
+
+    [HttpGet("/install/new")]
+    public IActionResult NewInstall()
+    {
+        return View("NewInstallLookup");
     }
 }

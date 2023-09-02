@@ -16,6 +16,10 @@ public class UsersController : Controller
     [HttpGet("/")]
     public IActionResult Index()
     {
+        if(HttpContext.Session.GetInt32("UUID") != null)
+        {
+            return RedirectToAction("Dashboard", "Home");
+        }
         return View();
     }
 

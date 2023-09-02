@@ -11,7 +11,7 @@ using SecurityApp.Models;
 namespace SecurityApp.Migrations
 {
     [DbContext(typeof(MyContext))]
-    [Migration("20230827024631_FirstMigration")]
+    [Migration("20230901173544_FirstMigration")]
     partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -29,7 +29,8 @@ namespace SecurityApp.Migrations
 
                     b.Property<string>("AccountPassword")
                         .IsRequired()
-                        .HasColumnType("longtext");
+                        .HasMaxLength(15)
+                        .HasColumnType("varchar(15)");
 
                     b.Property<DateTime>("ContractEnd")
                         .HasColumnType("datetime(6)");
@@ -45,6 +46,9 @@ namespace SecurityApp.Migrations
 
                     b.Property<bool>("Installed")
                         .HasColumnType("tinyint(1)");
+
+                    b.Property<float>("RMR")
+                        .HasColumnType("float");
 
                     b.Property<int>("SalesId")
                         .HasColumnType("int");

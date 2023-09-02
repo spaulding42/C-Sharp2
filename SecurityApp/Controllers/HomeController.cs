@@ -27,6 +27,7 @@ public class HomeController : Controller
         {
             if (loggedUser.Role == "Salesman")
             {
+                Console.WriteLine("Made it here ---------------------------------------------------------------------");
                 return RedirectToAction("SalesmanDashboard", "Salesman");
             }
             if (loggedUser.Role == "Technician")

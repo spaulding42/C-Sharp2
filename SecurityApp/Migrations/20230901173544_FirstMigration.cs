@@ -75,10 +75,11 @@ namespace SecurityApp.Migrations
                 {
                     AccountId = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
-                    AccountPassword = table.Column<string>(type: "longtext", nullable: false)
+                    AccountPassword = table.Column<string>(type: "varchar(15)", maxLength: 15, nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     ContractStart = table.Column<DateTime>(type: "datetime(6)", nullable: false),
                     ContractEnd = table.Column<DateTime>(type: "datetime(6)", nullable: false),
+                    RMR = table.Column<float>(type: "float", nullable: false),
                     Installed = table.Column<bool>(type: "tinyint(1)", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "datetime(6)", nullable: false),
                     UpdatedAt = table.Column<DateTime>(type: "datetime(6)", nullable: false),

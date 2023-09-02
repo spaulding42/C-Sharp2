@@ -1,9 +1,7 @@
 @model Account
-<h1>Create Account</h1>
-<p>CustomerID: @Context.Session.GetInt32("CID"), @Context.Session.GetString("CXName")</p>
+<h1>Edit Account</h1>
 
-
-<form asp-controller="Salesman" asp-action="RegisterAccount"  method="post" class="create-box">
+<form asp-controller="Salesman" asp-action="UpdateAccount"  asp-route-accountId = "@Model.AccountId" method="post" class="create-box">
     
     <div class = "d-flex">
         <label asp-for="AccountPassword">Password: </label>

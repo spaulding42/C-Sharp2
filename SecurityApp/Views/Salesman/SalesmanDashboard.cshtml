@@ -3,16 +3,14 @@
 
 <p>Role: @Model.Role</p>
 <p>@Model.Role ID: @Model.RoleId</p>
-@if(@Model.Role == "Salesman")
-{
-    <p>Sales Count: @Model.accounts.Count</p>
-    <a href="/customer/new">Add Customer</a>
-}
-else if(@Model.Role == "Technician")
+<p>Sales Count: @Model.accounts.Count</p>
+<a href="/customer/new">Add Customer</a>
+
+@* else if(@Model.Role == "Technician")
 {
     <p>Install Count: @Model.accounts.Count</p>
     <a href="/install/new">New Install</a>
-}
+} *@
 
 <table>
     
@@ -25,6 +23,7 @@ else if(@Model.Role == "Technician")
         <th>Last Name</th>
         <th>City</th>
         <th>State</th>
+        <th>Actions</th>
     </tr>
     @foreach(Account accnt in @Model.accounts)
     {
@@ -34,6 +33,7 @@ else if(@Model.Role == "Technician")
             <td>@accnt.customer.LastName</td>
             <td>@accnt.customer.City</td>
             <td>@accnt.customer.State</td>
+            <td><a href="/account/@accnt.AccountId/view">Details</a></td>
         </tr>
     }
 </table>
