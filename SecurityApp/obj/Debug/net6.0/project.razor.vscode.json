@@ -23779,6 +23779,11 @@
       "FilePath": "c:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\Views\\Salesman\\ViewOneAccount.cshtml",
       "TargetPath": "Views\\Salesman\\ViewOneAccount.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\Views\\Technician\\NewInstall.cshtml",
+      "TargetPath": "Views\\Technician\\NewInstall.cshtml",
+      "FileKind": "mvc"
     }
   ]
 }

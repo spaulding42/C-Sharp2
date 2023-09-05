@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SecurityApp.Models;
@@ -6,8 +7,21 @@ namespace SecurityApp.Models;
 [NotMapped]
 public class Item
 {
-    public int ItemID {get; set; }
+    [Key]
+    public int ItemId {get; set; }
+    
+    public int Zone {get; set; } = 0;
+
+    [Required]
     public string ItemName {get; set; }
+
+    [Required]
+    public string Location {get; set; }
+    
+    [Required]
     public string Category {get; set; }
-    public int Cost {get; set; }
+
+    public float? Price {get; set; }
+
+    public int AccountId {get; set; } = 0;
 }

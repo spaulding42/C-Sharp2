@@ -1,0 +1,52 @@
+@model Account
+
+<h1>Account Information:</h1>
+
+<table>
+    <tr>
+        <th>AR# :</th>
+        <th>First Name:</th>
+        <th>Last Name:</th>
+        <th>Address Line 1:</th>
+        <th>Address Line 2:</th>
+        <th>City:</th>
+        <th>State:</th>
+        <th>Zip:</th>
+    </tr>
+    <tr>
+        <td>@Model.AccountId</td>
+        <td>@Model.customer.FirstName</td>
+        <td>@Model.customer.LastName</td>
+        <td>@Model.customer.Line1</td>
+        <td>@Model.customer.Line2</td>
+        <td>@Model.customer.City</td>
+        <td>@Model.customer.State</td>
+        <td>@Model.customer.Zip</td>
+    </tr>
+</table>
+<table>
+    <tr>
+        <th>Password:</th>
+        <th>Contract Start:</th>
+        <th>Contract End:</th>
+        <th>RMR:</th>
+        <th>Install Complete:</th>
+    </tr>
+    <tr>
+        <td>@Model.AccountPassword</td>
+        <td>@Model.ContractStart.Month/@Model.ContractStart.Day/@Model.ContractStart.Year</td>
+        <td>@Model.ContractEnd.Month/@Model.ContractEnd.Day/@Model.ContractEnd.Year</td>
+        <td>$@Model.RMR</td>
+        @if(@Model.Installed == true){<td>Yes</td>}else{<td>No</td>}
+    </tr>
+</table>
+
+<h3>Equipment List: </h3>
+<table>
+    <th>Zone Number:</th>
+    <th>Name:</th>
+    <th>Category:</th>
+    <th>Location:</th>
+    <th>Price:</th>
+</table>
+
