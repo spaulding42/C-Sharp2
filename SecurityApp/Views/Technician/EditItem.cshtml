@@ -1,0 +1,26 @@
+@model Item
+
+<div class="text-center">
+
+    <form asp-controller="Technician" asp-action="UpdateItem" method="post">
+        <input asp-for="ItemId" type="hidden">        
+        <input asp-for="Category" type="hidden">        
+        <input asp-for="ItemName" type="hidden">        
+        <input asp-for="Price" type="hidden">
+        <input asp-for="AccountId" type="hidden">
+        
+        <div class = "d-flex">
+            <label asp-for="Zone">Zone: </label>
+            <span asp-validation-for="Zone" style="color: red"></span>
+        </div>
+        <input asp-for="Zone">
+        
+        <div class = "d-flex">
+            <label asp-for="Location">Location: </label>
+            <span asp-validation-for="Location" style="color: red"></span>
+        </div>
+        <input asp-for="Location">
+               
+        <button class="btn btn-success">Update</button>
+    </form>
+</div>

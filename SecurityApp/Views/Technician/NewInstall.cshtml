@@ -30,6 +30,7 @@
         <th>Contract Start:</th>
         <th>Contract End:</th>
         <th>RMR:</th>
+        <th>Equipment Maximum:</th>
         <th>Install Complete:</th>
     </tr>
     <tr>
@@ -37,16 +38,62 @@
         <td>@Model.ContractStart.Month/@Model.ContractStart.Day/@Model.ContractStart.Year</td>
         <td>@Model.ContractEnd.Month/@Model.ContractEnd.Day/@Model.ContractEnd.Year</td>
         <td>$@Model.RMR</td>
+        <td>$@Model.EquipmentCost</td>
         @if(@Model.Installed == true){<td>Yes</td>}else{<td>No</td>}
     </tr>
 </table>
-
+<H4>Sales Notes: </H4>
+<textarea class="notes-box">@Model.SalesNotes</textarea>
+<a href="/equipment/getcategory" class="d-block">Add Equipment</a>
 <h3>Equipment List: </h3>
 <table>
-    <th>Zone Number:</th>
-    <th>Name:</th>
-    <th>Category:</th>
-    <th>Location:</th>
-    <th>Price:</th>
+    <tr>
+        <th>Zone Number:</th>
+        <th>Name:</th>
+        <th>Category:</th>
+        <th>Location:</th>
+        <th>Price:</th>
+        <th>Actions:</th>
+    </tr>
+    @foreach(Item item in @Model.ItemList)
+    {
+        <tr>
+            <td>@item.Zone</td>
+            <td>@item.ItemName</td>
+            <td>@item.Category</td>
+            <td>@item.Location</td>
+            <td>@item.Price</td>
+            <td class="d-flex"><a href="/technician/@item.ItemId/edit" class="btn btn-success"> Edit</a>
+                <form asp-controller="Technician" asp-action="DeleteItem" asp-route-itemToDelete="@item.ItemId" method="post">
+                    <button class="btn btn-danger">Delete</button>
+                </form>
+                <form asp-controller="Technician" asp-action="VerifyItem" asp-route-itemToVerify="@item.ItemId" method="post">
+                    @if(item.SignalVerified == false){
+                        <button class="btn btn-primary">Verify Signal</button>
+                    }
+                    else{
+                        <div class="btn btn-success">Signal Verified</div>
+                    }
+                </form>
+            </td>
+        </tr>
+    }
 </table>
+@{
+    float total = 0;
+    bool verified = true;
+    foreach(Item item in @Model.ItemList)
+    {
+        total += item.Price;
+        if (item.SignalVerified == false) verified = false;
+    }
+}
+<div>Equipment Total: $@total</div>
+
+@if(verified)
+{
+    <form asp-controller="Technician" asp-action="FinishInstall" method="post">
+        <button class="btn btn-primary">Finish Install</button>
+    </form>
+}
 

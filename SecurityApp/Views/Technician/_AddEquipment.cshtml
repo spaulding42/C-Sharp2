@@ -1,0 +1,27 @@
+@model Item
+
+<div class="text-center">
+
+    <form asp-controller="Inventory" asp-action="SubmitItem" method="post">
+        
+        <div class = "d-flex">
+            <label asp-for="Category">Category: </label>
+            <span asp-validation-for="Category" style="color: red"></span>
+        </div>
+        <input asp-for="Category">
+        
+        <div class = "d-flex">
+            <label asp-for="ItemName">Item Name: </label>
+            <span asp-validation-for="ItemName" style="color: red"></span>
+        </div>
+        <input asp-for="ItemName">
+        
+        <div class = "d-flex">
+            <label asp-for="Price">Price: </label>
+            <span asp-validation-for="Price" style="color: red"></span>
+        </div>
+        <input asp-for="Price">
+        
+        <button class="btn btn-success">Create</button>
+    </form>
+</div>

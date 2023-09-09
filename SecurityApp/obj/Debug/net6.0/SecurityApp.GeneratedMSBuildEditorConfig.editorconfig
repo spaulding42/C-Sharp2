@@ -24,8 +24,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Inventory/AllAssigned.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XEFsbEFzc2lnbmVkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Inventory/AllUnassigned.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XEFsbFVuYXNzaWduZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Inventory/AuditAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XEF1ZGl0QWNjb3VudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Inventory/CreateItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XENyZWF0ZUl0ZW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Inventory/InventoryDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XEludmVudG9yeURhc2hib2FyZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Inventory/_ItemForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XF9JdGVtRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Inventory/_LookupAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XF9Mb29rdXBBY2NvdW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Salesman/CreateAccount.cshtml]
@@ -60,6 +84,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Technician/EditItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVjaG5pY2lhblxFZGl0SXRlbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Technician/NewInstall.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVjaG5pY2lhblxOZXdJbnN0YWxsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -68,12 +96,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVjaG5pY2lhblxOZXdJbnN0YWxsTG9va3VwLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Technician/SelectCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVjaG5pY2lhblxTZWxlY3RDYXRlZ29yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Technician/SelectItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVjaG5pY2lhblxTZWxlY3RJdGVtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Technician/TechnicianDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVjaG5pY2lhblxUZWNobmljaWFuRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Technician/_AddEquipment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVjaG5pY2lhblxfQWRkRXF1aXBtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Users/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Users/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcUHJvZmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Users/_Login.cshtml]

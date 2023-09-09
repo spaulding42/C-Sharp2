@@ -28,6 +28,12 @@
         <span asp-validation-for="RMR" style="color: red"></span>
     </div>
     <input asp-for="RMR">    
+    
+    <div class = "d-flex">
+        <label asp-for="EquipmentCost">Equipment Cost: </label>
+        <span asp-validation-for="EquipmentCost" style="color: red"></span>
+    </div>
+    <input asp-for="EquipmentCost">    
 
     <div class = "d-flex">
         <label asp-for="CustomerId">Customer ID: </label>
@@ -42,8 +48,14 @@
     </div>
     <input asp-for="SalesId" value='@Context.Session.GetInt32("UUID")'> 
     
+    <div class = "d-flex">
+        <label asp-for="SalesNotes">Sales Notes: </label>
+        <span asp-validation-for="SalesNotes" style="color: red"></span>
+    </div>
+    <textarea asp-for="SalesNotes" class="notes-box"></textarea> 
+    
 
         
-        <button type="submit" class="btn btn-primary buttons"> Submit </button>
+        <button type="submit" class="btn btn-primary buttons"> Create </button>
     </div>
 </form>

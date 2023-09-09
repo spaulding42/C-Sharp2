@@ -1,0 +1,9 @@
+@model List<string>
+
+<h2>Pick Item Category</h2>
+<ul>
+    @foreach(string cat in @Model)
+    {
+        <li><a href="/equipment/@cat/getitem">@cat</a></li>
+    }
+</ul>

@@ -1,8 +1,15 @@
 @{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Inventory Dashboard";
 }
+@model User
 
 <div class="text-center">
-    <h1 class="display-4">Welcome to the Inventory Management section!</h1>
-    
+    <h1 class="display-4">Inventory Management</h1>
+    <span>Dashboard </span> | 
+    <a href="/inventory/create">Create Item</a> | 
+    <a href="/audit/account">Audit Account </a> | 
+    <a href="/inventory/unassigned/all">View All Unassigned</a> | 
+    <a href="/inventory/assigned/all">View All Assigned</a>
+    <h3>Welcome @Model.FirstName @Model.LastName</h3>
+    <p>User Id: @Model.RoleId</p>
 </div>

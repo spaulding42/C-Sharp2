@@ -14,6 +14,7 @@
         <th>Last Name</th>
         <th>City</th>
         <th>State</th>
+        <th>Complete?</th>
     </tr>
     @foreach(Account accnt in @Model.accounts)
     {
@@ -23,6 +24,7 @@
             <td>@accnt.customer.LastName</td>
             <td>@accnt.customer.City</td>
             <td>@accnt.customer.State</td>
+            @if(accnt.Installed){<td>Yes</td>} else {<td>No</td>}
         </tr>
     }
 </table>

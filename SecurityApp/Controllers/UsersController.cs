@@ -97,6 +97,16 @@ public class UsersController : Controller
         return View("Index");
     }
 
+    [HttpGet("/profile")]
+    public IActionResult UserProfile()
+    {
+        User? dbUser = db.Users.FirstOrDefault(u=>u.RoleId == HttpContext.Session.GetInt32("UUID"));
+        if (dbUser == null){
+            return RedirectToAction("Logout", "Users");
+        }
+        return View("Profile", dbUser);
+    }
+    
     [HttpPost("/logout")]
     public IActionResult Logout()
     {

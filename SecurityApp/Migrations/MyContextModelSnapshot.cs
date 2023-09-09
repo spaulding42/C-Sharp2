@@ -42,6 +42,9 @@ namespace SecurityApp.Migrations
                     b.Property<int>("CustomerId")
                         .HasColumnType("int");
 
+                    b.Property<float>("EquipmentCost")
+                        .HasColumnType("float");
+
                     b.Property<bool>("Installed")
                         .HasColumnType("tinyint(1)");
 
@@ -50,6 +53,9 @@ namespace SecurityApp.Migrations
 
                     b.Property<int>("SalesId")
                         .HasColumnType("int");
+
+                    b.Property<string>("SalesNotes")
+                        .HasColumnType("longtext");
 
                     b.Property<int?>("TechId")
                         .HasColumnType("int");
@@ -111,6 +117,50 @@ namespace SecurityApp.Migrations
                     b.HasKey("CustomerId");
 
                     b.ToTable("Customers");
+                });
+
+            modelBuilder.Entity("SecurityApp.Models.Item", b =>
+                {
+                    b.Property<int>("ItemId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("AccountId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Category")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<string>("ItemName")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Location")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<float>("Price")
+                        .HasColumnType("float");
+
+                    b.Property<int?>("RoleId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("SignalVerified")
+                        .HasColumnType("tinyint(1)");
+
+                    b.Property<DateTime>("UpdatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<int>("Zone")
+                        .HasColumnType("int");
+
+                    b.HasKey("ItemId");
+
+                    b.ToTable("Items");
                 });
 
             modelBuilder.Entity("SecurityApp.User", b =>

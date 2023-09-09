@@ -24,8 +24,13 @@ public class Account
     [Required(ErrorMessage = "is required.")]
     [Range(0,100,ErrorMessage = "must be between 0 and 100")]
     public float RMR {get; set; }
-    
-    
+
+    [Required]
+    [Range(1,10000, ErrorMessage = "must be in range 1,10000")]
+    public float EquipmentCost {get; set; } = 0;
+
+    public string? SalesNotes {get; set;} = "";
+        
     public bool Installed {get; set; } = false;
     
     public DateTime CreatedAt {get; set; } = DateTime.Now;

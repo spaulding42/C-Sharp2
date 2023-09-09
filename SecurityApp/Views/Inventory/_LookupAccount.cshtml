@@ -1,0 +1,16 @@
+@model ARLookup
+
+<div class="text-center">
+    <h1 class="display-4">Look up Account </h1>
+
+    <form asp-controller="Inventory" asp-action="LookupAccount" method="post">
+        
+        <div class = "d-flex">
+            <label asp-for="ARNum">AR Number: </label>
+            <span asp-validation-for="ARNum" style="color: red"></span>
+        </div>
+        <input asp-for="ARNum">
+        
+        <button class="btn btn-success">Lookup</button>
+    </form>
+</div>
