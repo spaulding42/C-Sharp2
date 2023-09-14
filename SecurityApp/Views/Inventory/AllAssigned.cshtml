@@ -23,7 +23,7 @@
     @foreach(Item item in @Model)
     {
         <tr>
-            <td>@item.AccountId</td>
+            <td><a href="/inventory/@item.AccountId/view">@item.AccountId</a></td>
             <td>@item.Category</td>                        
             <td>@item.ItemName</td>                        
             <td>$@item.Price</td>

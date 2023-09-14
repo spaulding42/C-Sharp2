@@ -1,6 +1,7 @@
 @{
     ViewData["Title"] = "Audit Account";
 }
+@model ARLookup
 
 <div class="text-center">
     <h1 class="display-4">Audit Account</h1>
@@ -10,3 +11,14 @@
     <a href="/inventory/unassigned/all">View All Base Items</a> | 
     <a href="/inventory/assigned/all">View All Assigned</a>
 </div>
+
+<form asp-controller="Inventory" asp-action="LookupAccount" method="post">
+    
+    <div class = "d-flex">
+        <label asp-for="ARNum">AR Number: </label>
+        <span asp-validation-for="ARNum" style="color: red"></span>
+    </div>
+    <input asp-for="ARNum">
+    
+    <button class="btn btn-success">Next</button>
+</form>

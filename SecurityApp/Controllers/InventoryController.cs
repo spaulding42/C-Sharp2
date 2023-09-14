@@ -1,6 +1,7 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SecurityApp.Models;
 
 namespace SecurityApp.Controllers;
@@ -129,6 +130,41 @@ public class InventoryController : Controller
         return View("AllAssigned", dbItems);
     }
 
+    [HttpGet("/inventory/{accountid}/view")]
+    public IActionResult ViewAccount(int accountid)
+    {
+        Account? dbAccount = db.Accounts.Include(c=>c.customer).FirstOrDefault(a=>a.AccountId == accountid);
+        if(dbAccount == null) return RedirectToAction("Dashboard", "Home");
+        List<Item> installedItems = db.Items.Where(i=>i.AccountId == dbAccount.AccountId).ToList();
+        if(installedItems != null) dbAccount.ItemList = installedItems;
+
+        return View("ViewAccount", dbAccount);
+    }
+
+    [HttpPost("/inventory/lookup")]
+    public IActionResult LookupAccount(ARLookup accountId)
+    {
+        if(ModelState.IsValid)
+        {
+            Account? dbAccount = db.Accounts.Include(c=>c.customer).FirstOrDefault(x => x.AccountId == accountId.ARNum);
+            if(dbAccount == null)
+            {
+                ModelState.AddModelError("ARNum", "account not found");
+            }
+            else
+            {
+                HttpContext.Session.SetInt32("Account", dbAccount.AccountId);
+                dbAccount.UpdatedAt = DateTime.Now;
+                db.Update(dbAccount);
+                db.SaveChanges();
+                List<Item> dbItems = db.Items.Where(i => i.AccountId == dbAccount.AccountId).OrderBy(i=>i.Zone).ToList();
+                dbAccount.ItemList = dbItems;
+                return View("ViewAccount", dbAccount);
+            }
+        }
+        return View("AuditAccount");
+    }
+    
     private bool Authorized()
     {
         bool authorized = true;

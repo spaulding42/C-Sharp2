@@ -23869,6 +23869,11 @@
       "FilePath": "c:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\Views\\Users\\ViewUser.cshtml",
       "TargetPath": "Views\\Users\\ViewUser.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\Views\\Inventory\\ViewAccount.cshtml",
+      "TargetPath": "Views\\Inventory\\ViewAccount.cshtml",
+      "FileKind": "mvc"
     }
   ]
 }
