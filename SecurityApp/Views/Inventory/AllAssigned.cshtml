@@ -1,12 +1,33 @@
 @{
     ViewData["Title"] = "All Assigned";
 }
+@model List<Item>
 
 <div class="text-center">
     <h1 class="display-4">All Assigned</h1>
     <a href="/inventory">Dashboard </a> | 
     <a href="/inventory/create">Create Item</a> | 
     <a href="/audit/account">Audit Account </a> | 
-    <a href="/inventory/unassigned/all">View All Unassigned</a> | 
+    <a href="/inventory/unassigned/all">View All Base Items</a> | 
     <span>View All Assigned</span>
 </div>
+
+<table class="text-center d-flex justify-content-center table table-striped">
+    <tr>
+        <th><a href="/inventory/all/accountid">Account Id:</a> | </th> 
+        <th><a href="/inventory/all/category">Category:</a> | </th> 
+        <th><a href="/inventory/all/name">Item Name:</a> | </th>                     
+        <th><a href="/inventory/all/price">Item Price:</a> | </th>
+        <th><a href="/inventory/all/createdby">Created by ID:</a></th>
+    </tr>
+    @foreach(Item item in @Model)
+    {
+        <tr>
+            <td>@item.AccountId</td>
+            <td>@item.Category</td>                        
+            <td>@item.ItemName</td>                        
+            <td>$@item.Price</td>
+            <td><a href="/users/@item.RoleId/view">@item.RoleId</a></td>
+        </tr>
+    }
+</table>

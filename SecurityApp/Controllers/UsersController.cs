@@ -107,10 +107,234 @@ public class UsersController : Controller
         return View("Profile", dbUser);
     }
     
-    [HttpPost("/logout")]
+    [HttpGet("/users/edit")]
+    public IActionResult EditProfile()
+    {
+        int? UUID = HttpContext.Session.GetInt32("UUID");
+        if(UUID != null)
+        {
+            User? dbUser = db.Users.FirstOrDefault(u=> u.RoleId == UUID);
+            if(dbUser != null)
+            {
+                return View("EditProfile", dbUser);
+            }
+
+        }
+        return RedirectToAction("Logout", "Users");
+    }
+    [HttpPost("/profile/update")]
+    public IActionResult UpdateProfile(User updatedUser)
+    {
+        User? dbUser = db.Users.FirstOrDefault(u=>u.RoleId == HttpContext.Session.GetInt32("UUID"));
+        if (dbUser == null){
+            return RedirectToAction("Logout", "Users");
+        }
+
+        updatedUser.Password = dbUser.Password;
+        updatedUser.ConfirmPassword = dbUser.Password;
+        updatedUser.RoleId = dbUser.RoleId;
+        updatedUser.CreatedAt = dbUser.CreatedAt;
+        updatedUser.UpdatedAt = dbUser.UpdatedAt;
+
+        if(ModelState.IsValid)
+        {
+            dbUser.FirstName = updatedUser.FirstName;
+            dbUser.LastName = updatedUser.LastName;
+            dbUser.Email = updatedUser.Email;
+            dbUser.Role = updatedUser.Role;
+            db.Update(dbUser);
+            db.SaveChanges();
+            return RedirectToAction("UserProfile", "Users");
+        }
+        else
+        {
+            return View("EditProfile", updatedUser);
+        }
+    }
+
+    [HttpGet("/users/changepassword")]
+    public IActionResult ChangePassword()
+    {
+        int? UUID = HttpContext.Session.GetInt32("UUID");
+        User? dbUser = db.Users.FirstOrDefault(u=> u.RoleId == UUID);
+
+        // if logged in and user is in db then proceed to changepassword form
+        if(UUID != null && dbUser != null) return View("ChangePassword");
+                
+        return RedirectToAction("Logout", "Users");
+    }
+
+    [HttpPost("/users/updatepassword")]
+    public IActionResult UpdatePassword(UpdatePassword UpdatedPassword)
+    {
+        int? UUID = HttpContext.Session.GetInt32("UUID");
+        User? dbUser = db.Users.FirstOrDefault(u=> u.RoleId == UUID);
+
+        if(UUID == null || dbUser == null) return RedirectToAction("Logout", "Users");
+        
+        if(ModelState.IsValid)
+        {
+            //  // since email exists, we now need to  check if the passwords match
+            var hasher = new PasswordHasher<UpdatePassword>();
+                
+            //     // verify provided password against hash stored in db
+            var result = hasher.VerifyHashedPassword(UpdatedPassword, dbUser.Password, UpdatedPassword.CurrentPassword);
+
+            if(result == 0)
+            {
+                ModelState.AddModelError("CurrentPassword", "incorrect current password");
+                return View("ChangePassword", UpdatedPassword);
+            }
+
+            PasswordHasher<UpdatePassword> Hasher = new PasswordHasher<UpdatePassword>();
+            UpdatedPassword.NewPassword = Hasher.HashPassword(UpdatedPassword, UpdatedPassword.NewPassword);
+            dbUser.Password = UpdatedPassword.NewPassword;
+            db.Update(dbUser);
+            db.SaveChanges();
+            return RedirectToAction("UserProfile", dbUser);
+
+        }
+        return View("ChangePassword");
+    }
+
+    [HttpGet("/users/forgotpassword")]
+    public IActionResult ForgotPassword()
+    {
+        ForgotUser Forgot = new ForgotUser();
+        Forgot.ForgotDoB = DateTime.Now;
+        return View("ForgotPassword", Forgot);
+    }
+    [HttpPost("/users/recoverpassword")]
+    public IActionResult RecoverPassword(ForgotUser forgotUser)
+    {
+        if(ModelState.IsValid)
+        {
+            User? dbUser = db.Users.FirstOrDefault(u => u.Email == forgotUser.ForgotEmail);
+            
+            if(dbUser == null)
+            {
+                ModelState.AddModelError("ForgotEmail", "not found");
+                return View("ForgotPassword", forgotUser);
+            }
+
+            if(dbUser != null)
+            {
+                if(forgotUser.ForgotDoB.Date != dbUser.DoB.Date)
+                {
+                    ModelState.AddModelError("ForgotDoB", "doesn't match DoB for email listed");
+                    return View("ForgotPassword", forgotUser);
+                }
+                UpdatePassword newPass = new UpdatePassword();
+                newPass.CurrentPassword = dbUser.Password;
+                HttpContext.Session.SetInt32("UUID", (int)dbUser.RoleId);
+                return View("NewPassword", newPass);
+            }
+        }
+        return View("ForgotPassword");
+    }
+
+    [HttpPost("/users/updatedrecoveredpassword")]
+    public IActionResult UpdateRecoveredPassword(UpdatePassword UpdatedPassword)
+    {
+        int? UUID = HttpContext.Session.GetInt32("UUID");
+        User? dbUser = db.Users.FirstOrDefault(u=> u.RoleId == UUID);
+
+        if(UUID == null || dbUser == null) return RedirectToAction("Logout", "Users");
+        
+        if(ModelState.IsValid)
+        {
+            PasswordHasher<UpdatePassword> Hasher = new PasswordHasher<UpdatePassword>();
+            UpdatedPassword.NewPassword = Hasher.HashPassword(UpdatedPassword, UpdatedPassword.NewPassword);
+            dbUser.Password = UpdatedPassword.NewPassword;
+            db.Update(dbUser);
+            db.SaveChanges();
+            return RedirectToAction("UserProfile", dbUser);
+
+        }
+        return View("NewPassword", UpdatedPassword);
+    }
+    [HttpGet("/logout")]
     public IActionResult Logout()
     {
         HttpContext.Session.Clear();
-        return RedirectToAction("Index");
+        return RedirectToAction("Index", "Users");
     }
+
+    [HttpGet("/users/delete/confirm")]
+    public IActionResult DeleteForm()
+    {
+        User? dbUser = db.Users.FirstOrDefault(u=>u.RoleId == HttpContext.Session.GetInt32("UUID"));
+        if (dbUser == null) return RedirectToAction("Dashboard", "Home");
+
+        ViewBag.firstName = dbUser.FirstName;
+        ViewBag.lastName = dbUser.LastName;
+        return View("DeleteForm");
+    }
+
+    [HttpPost("/users/delete")]
+    public IActionResult DeleteUser(DeleteConfirm confirm)
+    {
+        int? UUID = HttpContext.Session.GetInt32("UUID");
+        User? dbUser = db.Users.FirstOrDefault(u=>u.RoleId == UUID);
+
+        if(confirm.Confirmation == "delete")
+        {
+            if(dbUser != null)
+            {
+                if(dbUser.Role == "Salesman")
+                {
+                    List<Account>? assignedAccounts = db.Accounts.Where(a=>a.SalesId == UUID).ToList();
+                    if (assignedAccounts != null)
+                    {
+                        foreach(Account account in assignedAccounts)
+                        {
+                            account.SalesId = -1;
+                            db.Update(account);
+                            db.SaveChanges();
+                        }
+                    }
+
+                }
+                if(dbUser.Role == "Technician")
+                {
+                    List<Account>? assignedAccounts = db.Accounts.Where(a=>a.TechId == UUID).ToList();
+                    if (assignedAccounts != null)
+                    {
+                        foreach(Account account in assignedAccounts)
+                        {
+                            account.TechId = -1;
+                            db.Update(account);
+                            db.SaveChanges();
+                        }
+                    }
+
+                }
+                db.Remove(dbUser);
+                db.SaveChanges();
+                HttpContext.Session.Clear();
+                return RedirectToAction("Index", "Users");
+            }
+        }
+        else{
+            if(dbUser == null) return RedirectToAction("Dashboard", "Home");
+
+            ModelState.AddModelError("Confirmation", "must type 'delete' to confirm");
+            ViewBag.firstName = dbUser.FirstName;
+            ViewBag.lastName = dbUser.LastName;
+            return View("DeleteForm");
+        }
+        return RedirectToAction("Index", "Users");
+
+    }
+
+    [HttpGet("/users/{userid}/view")]
+    public IActionResult ViewUser(int userid)
+    {
+        User? UserById = db.Users.FirstOrDefault(u=>u.RoleId == userid);
+        if(UserById == null) return RedirectToAction("Dashboard", "Home");
+
+        return View("ViewUser", UserById);
+        
+    }
+
 }

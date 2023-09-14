@@ -1,9 +1,7 @@
 @model User
-@{DateTime noon = DateTime.Now;}
-<h1 class="text-center">Register</h1>
-<p class="text-center">All fields required</p>
-<form asp-controller="Users" asp-action="Register"  method="post" class="create-box">
-    
+
+<form asp-asp-controller="Users" asp-action="UpdateProfile" method="post">
+     
     <div class = "d-flex">
         <label asp-for="FirstName">First Name: </label>
         <span asp-validation-for="FirstName" style="color: red"></span>
@@ -31,23 +29,8 @@
     </select>
     <span asp-validation-for="Role" style="color: red"></span>
 
-    <div class = "d-flex">
-        <label asp-for="DoB">Date of Birth: </label>
-        <span asp-validation-for="DoB" style="color: red"></span>
-    </div>
-    <input asp-for="DoB">  
+    <input asp-for="Password" type="hidden">
+    <input asp-for="ConfirmPassword" type="hidden" value="@Model.Password">
     
-    <div class = "d-flex">
-        <label asp-for="Password">Password: </label>
-        <span asp-validation-for="Password" style="color: red"></span>
-    </div>
-    <input asp-for="Password">  
-    <div class = "d-flex">
-        <label asp-for="ConfirmPassword">Confirm Password: </label>
-        <span asp-validation-for="ConfirmPassword" style="color: red"></span>
-    </div>
-    <input asp-for="ConfirmPassword">  
-        
-        <button type="submit" class="btn btn-primary buttons"> Submit </button>
-    
+    <button type="submit" class="btn btn-primary buttons"> Submit </button>
 </form>

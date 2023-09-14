@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using Microsoft.AspNetCore.Http.Features;
 using Microsoft.AspNetCore.Mvc;
 using SecurityApp.Models;
 
@@ -52,6 +53,8 @@ public class InventoryController : Controller
 
         if(ModelState.IsValid)
         {
+            newItem.Category = newItem.Category.ToUpper();
+            newItem.ItemName = newItem.ItemName.ToUpper();
             newItem.RoleId = UUID;
             newItem.CreatedAt = DateTime.Now;
             newItem.UpdatedAt = DateTime.Now;
@@ -82,7 +85,8 @@ public class InventoryController : Controller
             return RedirectToAction("Logout", "Users");
         }
 
-        return View("AllUnassigned");
+        List<Item> unassignedItems = db.Items.Where(i => i.AccountId == 0).ToList();
+        return View("AllUnassigned", unassignedItems);
     }
 
     [HttpGet("/inventory/assigned/all")]
@@ -92,8 +96,37 @@ public class InventoryController : Controller
         {
             return RedirectToAction("Logout", "Users");
         }
+        List<Item> dbItems = db.Items.Where(i=>i.AccountId != 0).ToList();
 
-        return View("AllAssigned");
+        return View("AllAssigned", dbItems);
+    }
+
+    [HttpGet("/inventory/all/{sortby}")]
+    public IActionResult SortBy(string sortby)
+    {
+        List<Item> dbItems = db.Items.Where(i=>i.AccountId !=0).ToList();
+
+        if(sortby == "accountid")
+        {
+            dbItems = db.Items.Where(i=>i.AccountId != 0).OrderBy(i=>i.AccountId).ToList();
+        }
+        if(sortby == "category")
+        {
+            dbItems = db.Items.Where(i=>i.AccountId != 0).OrderBy(i=>i.Category).ToList();
+        }
+        if(sortby == "name")
+        {
+            dbItems = db.Items.Where(i=>i.AccountId != 0).OrderBy(i=>i.ItemName).ToList();
+        }
+        if(sortby == "price")
+        {
+            dbItems = db.Items.Where(i=>i.AccountId != 0).OrderBy(i=>i.Price).ToList();
+        }
+        if(sortby == "createdby")
+        {
+            dbItems = db.Items.Where(i=>i.AccountId != 0).OrderBy(i=>i.RoleId).ToList();
+        }
+        return View("AllAssigned", dbItems);
     }
 
     private bool Authorized()
@@ -101,14 +134,13 @@ public class InventoryController : Controller
         bool authorized = true;
         int? UUID = HttpContext.Session.GetInt32("UUID");
         User? loggedUser = db.Users.FirstOrDefault(u=>u.RoleId == UUID);
-        if (UUID == null)
-        {
-            authorized = false;
-        }
-        if(loggedUser == null || loggedUser.Role != "Inventory")
+        
+        if(UUID == null || loggedUser == null || loggedUser.Role != "Inventory")
         {
             authorized = false;
         }
         return authorized;
     }
+
+    
 }

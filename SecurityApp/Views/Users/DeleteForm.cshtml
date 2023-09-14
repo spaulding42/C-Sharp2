@@ -1,0 +1,11 @@
+@model DeleteConfirm
+<h1>Are you sure you wish to delete user @ViewBag.firstName @ViewBag.lastName?</h1>
+<h4>If you are sure type "delete" in the box below</h4>
+<form asp-controller="Users" asp-action="DeleteUser" method="post">
+    <div class = "d-flex">
+        <label asp-for="Confirmation">type 'delete': </label>
+        <span asp-validation-for="Confirmation" style="color:red"></span>
+    </div>
+    <input asp-for="Confirmation">
+    <button class="btn btn-danger">Permanently Delete</button>
+</form>

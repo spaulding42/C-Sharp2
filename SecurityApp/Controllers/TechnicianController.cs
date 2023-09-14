@@ -86,6 +86,20 @@ public class TechnicianController : Controller
         return View("NewInstallLookup");
     }
 
+    [HttpGet("/install/{arNum}/lookup")]
+    public IActionResult LookupWithAr(int arNum)
+    {
+        Account? dbAccount = db.Accounts.Include(c=>c.customer).FirstOrDefault(x=>x.AccountId == arNum);
+        if(dbAccount != null && dbAccount.TechId == HttpContext.Session.GetInt32("UUID"))
+        {
+            HttpContext.Session.SetInt32("Account", dbAccount.AccountId);
+            List<Item> dbItems = db.Items.Where(i => i.AccountId == dbAccount.AccountId).OrderBy(i=>i.Zone).ToList();
+            dbAccount.ItemList = dbItems;
+            return View("NewInstall", dbAccount);
+        }
+        return RedirectToAction("Dashboard", "Home");
+    }
+
     //adding equipment routes
     [HttpGet("/equipment/getcategory")]
     public IActionResult GetCategory()

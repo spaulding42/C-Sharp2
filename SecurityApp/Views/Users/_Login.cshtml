@@ -2,7 +2,7 @@
 <h1 class="text-center">Login</h1>
 
 <form asp-controller="Users" asp-action="Login"  method="post" class="create-box">
-
+    
     <div class = "d-flex">
         <label asp-for="LoginEmail">Email: </label>
         <span asp-validation-for="LoginEmail" style="color: red"></span>
@@ -14,8 +14,8 @@
         <span asp-validation-for="LoginPassword" style="color: red"></span>
     </div>
     <input asp-for="LoginPassword">  
- 
+
         
-        <button type="submit" class="btn btn-primary buttons"> Submit </button>
-    </div>
+    <button type="submit" class="btn btn-primary buttons"> Submit </button>
+    <a href="/users/forgotpassword">forgot password?</a>
 </form>

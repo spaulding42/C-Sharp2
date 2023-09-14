@@ -27,6 +27,9 @@ public class User
     [Required(ErrorMessage = "is required!")]
     public string Password {get; set; }
     
+    [Required(ErrorMessage = "is required for password recovery")]
+    public DateTime DoB {get; set; }
+
     [NotMapped]
     [Compare("Password", ErrorMessage = "doesn't match password")]
     [DataType(DataType.Password)]

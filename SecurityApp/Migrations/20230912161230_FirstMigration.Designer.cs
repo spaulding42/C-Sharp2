@@ -11,7 +11,7 @@ using SecurityApp.Models;
 namespace SecurityApp.Migrations
 {
     [DbContext(typeof(MyContext))]
-    [Migration("20230908164726_FirstMigration")]
+    [Migration("20230912161230_FirstMigration")]
     partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -172,6 +172,9 @@ namespace SecurityApp.Migrations
                         .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime(6)");
+
+                    b.Property<DateTime>("DoB")
                         .HasColumnType("datetime(6)");
 
                     b.Property<string>("Email")
