@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lPF6IdYx8Ir7cmmI4GNCnqbDNo2kyo6xC8d00vVFfG9kNpBtR+jGUgIm2XNC0cRTPTpzmzeSrgRKGqbxFoa/3w==",
+  "dgSpecHash": "kyvqCflMZnU8k1IaGh0QuDvUVZpHh+dadI/U2IgffLJtl53HR2BRp35Ze2EvLjREM7/1ldqhCgt7h5RQvRAUhQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\SecurityApp.csproj",
+  "projectFilePath": "c:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\SecurityApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MiniMe\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\MiniMe\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.3\\microsoft.entityframeworkcore.6.0.3.nupkg.sha512",

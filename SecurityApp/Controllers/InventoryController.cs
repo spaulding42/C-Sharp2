@@ -23,6 +23,15 @@ public class InventoryController : Controller
         {
             return RedirectToAction("Logout", "Users");
         }
+        ViewBag.CompletedAccounts = 0;
+        ViewBag.IncompleteAccounts = 0;
+        
+        List<Account> dbAccounts = db.Accounts.Where(a=>a.Installed == true).ToList();
+        if(dbAccounts != null) ViewBag.CompletedAccounts = dbAccounts.Count;
+        
+        dbAccounts = db.Accounts.Where(a=>a.Installed == false).ToList();
+        if(dbAccounts != null) ViewBag.IncompleteAccounts = dbAccounts.Count;
+
         return View("InventoryDashboard", loggedUser);
     }
     

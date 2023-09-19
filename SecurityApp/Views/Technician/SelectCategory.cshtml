@@ -1,10 +1,13 @@
 @model List<string>
 
-<h2>Pick Item Category</h2>
-<ul>
-    @foreach(string cat in @Model)
-    {
-        <li><a href="/equipment/@cat/getitem">@cat</a></li>
-    }
-</ul>
-<a href='/install/@Context.Session.GetInt32("Account")/lookup' class="btn btn-danger">Cancel</a>
+<div class="catbox">
+    <h2 class="text-center">Pick Item Category</h2>
+    <ul class="categories text-center">
+        @foreach(string cat in @Model)
+        {
+            <li class="cat-li"><a href="/equipment/@cat/getitem" class="cat-selections btn-animate">@cat</a></li>
+        }
+    </ul>
+    <a href='/install/@Context.Session.GetInt32("Account")/lookup' class="btn btn-danger">Cancel</a>
+
+</div>

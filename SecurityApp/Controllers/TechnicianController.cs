@@ -150,6 +150,7 @@ public class TechnicianController : Controller
         Account? accountNum = db.Accounts.Include(c=> c.customer).FirstOrDefault(a=>a.AccountId ==HttpContext.Session.GetInt32("Account"));
         int? UUID = HttpContext.Session.GetInt32("UUID");
         // add price to item
+        
         if(dbItem == null || accountNum == null || UUID == null)
         {
             //this is temporary-----------

@@ -1,5 +1,11 @@
+/* *{
+  background-color: black;
+  color: white;
+} */
+
 html {
   font-size: 14px;
+  
 }
 
 @media (min-width: 768px) {
@@ -37,7 +43,68 @@ body {
   margin-top: 10px;
 }
 
+
 .notes-box{
   height: 150px;
   width: 250px;
+}
+
+.categories{
+  list-style-type: none;
+}
+
+.catbox{
+  width: 40%;
+  height: auto;
+  border: 3px solid #0D6EFD;
+  box-shadow: 7px 10px darkblue;
+  border-radius: 30px;
+  padding: 25px;
+}
+
+.form-input{
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+.cat-li{
+  margin: 20px;
+}
+
+.cat-selections{
+  background-color: var(--background-color);
+  color: #222;
+  padding: .5em 1em;
+  border: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+  --background-color: #0af;
+  --border-size: 2px;
+
+}
+
+
+/* border slides out around box on hover*/
+.cat-selections.btn-animate::before{
+  content: '';
+  position: absolute;
+  top:0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  border: var(--border-size) solid var(--background-color);
+  transition: top,left,right,bottom 100ms ease-in-out;
+}
+
+.cat-selections.btn-animate:hover::before,
+.cat-selections.btn-animate:focus::before{
+  top: calc(var(--border-size)* -2);
+  left: calc(var(--border-size)* -2);
+  right: calc(var(--border-size)* -2);
+  bottom: calc(var(--border-size)* -2);
 }

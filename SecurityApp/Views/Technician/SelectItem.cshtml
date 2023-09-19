@@ -1,40 +1,50 @@
 @model Item
 
-<div class="text-center">
+<div class="text-center catbox">
 
     <form asp-controller="Technician" asp-action="AddItem" method="post">
         
-        <div class = "d-flex">
-            <label asp-for="Category">Category: </label>
-            <span asp-validation-for="Category" style="color: red"></span>
+        <div class="form-input">
+            <div class = "d-flex">
+                <label asp-for="Category">Category: </label>
+                <span asp-validation-for="Category" style="color: red"></span>
+            </div>
+            <input asp-for="Category" value="@ViewBag.Category" type="hidden">
+            <div>@ViewBag.Category</div>
         </div>
-        <input asp-for="Category" value="@ViewBag.Category">
         
-        <div class="d-flex">
+        <div class="form-input">
+           
             <label asp-for="ItemName">Item Name:</label>
-            <select name="ItemName" asp-for="ItemName" class="d-flex margin-top">
-                <option hidden value="">Select Equipment:</option>
+            <span asp-validation-for="ItemName" style="color: red"></span>
+            <select name="ItemName" asp-for="ItemName" class="margins">
                 @foreach(string name in @ViewBag.ItemList)
                 {
                     <option value="@name">@name</option>
                 }
             </select>
-            <span asp-validation-for="ItemName" style="color: red"></span>
-        </div>
         
-        <div class = "d-flex">
-            <label asp-for="Zone">Zone: </label>
-            <span asp-validation-for="Zone" style="color: red"></span>
         </div>
-        <input asp-for="Zone">
-        
-        <div class = "d-flex">
-            <label asp-for="Location">Location: </label>
-            <span asp-validation-for="Location" style="color: red"></span>
+
+        <div class="form-input">
+            <div class = "d-flex">
+                <label asp-for="Zone">Zone: </label>
+                <span asp-validation-for="Zone" style="color: red"></span>
+            </div>
+            <input asp-for="Zone">
+
         </div>
-        <input asp-for="Location">
+
+        <div class="form-input">
+            <div class = "d-flex">
+                <label asp-for="Location">Location: </label>
+                <span asp-validation-for="Location" style="color: red"></span>
+            </div>
+            <input asp-for="Location">
+
+        </div>
            
         <button class="btn btn-success">Add Equipment</button>
     </form>
+    <a href='/install/@Context.Session.GetInt32("Account")/lookup' class="btn btn-danger buttons">Cancel</a>
 </div>
-<a href='/install/@Context.Session.GetInt32("Account")/lookup' class="btn btn-danger">Cancel</a>

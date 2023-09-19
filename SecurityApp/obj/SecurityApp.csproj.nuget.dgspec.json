@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\SecurityApp.csproj": {}
+    "c:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\SecurityApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\SecurityApp.csproj": {
+    "c:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\SecurityApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\SecurityApp.csproj",
+        "projectUniqueName": "c:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\SecurityApp.csproj",
         "projectName": "SecurityApp",
-        "projectPath": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\SecurityApp.csproj",
+        "projectPath": "c:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\SecurityApp.csproj",
         "packagesPath": "C:\\Users\\MiniMe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\obj\\",
+        "outputPath": "c:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\MiniMe\\AppData\\Roaming\\NuGet\\NuGet.Config"
