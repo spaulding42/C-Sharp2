@@ -4,43 +4,46 @@
     ViewData["Title"] = "Create Item";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Create Item</h1>
-    <a href="/inventory">Dashboard </a> | 
-    <span >Create Item</span> | 
-    <a href="/audit/account">Audit Account </a> | 
-    <a href="/inventory/unassigned/all">View All Base Items</a> | 
-    <a href="/inventory/assigned/all">View All Assigned</a>
-</div>
+<body class="bg">
+        
+    <div class="text-center">
+        <h1 class="display-4">Create Item</h1>
+        <a href="/inventory">Dashboard </a> | 
+        <span >Create Item</span> | 
+        <a href="/audit/account">Audit Account </a> | 
+        <a href="/inventory/unassigned/all">View All Base Items</a> | 
+        <a href="/inventory/assigned/all">View All Assigned</a>
+    </div>
 
-@{
-    Item newItem = new Item();
-}
-
-@await Html.PartialAsync("_ItemForm", newItem)
-
-@{
-    if(@Model != null)
-    {
-        <h3>Items Created by You: </h3>
-
-            <table class="text-center d-flex justify-content-center table table-striped">
-                <tr>
-                    <th>Item Id: </th>
-                    <th>Category: </th>
-                    <th>Item Name: </th>                    
-                    <th>Item Price: </th>
-                </tr>
-                @foreach(Item item in @Model)
-                {
-                    <tr>
-                        <td>@item.ItemId</td>
-                        <td>@item.Category</td>                        
-                        <td>@item.ItemName</td>                        
-                        <td>$@item.Price</td>
-                    </tr>
-                }
-            </table>
+    @{
+        Item newItem = new Item();
     }
-}
+
+    @await Html.PartialAsync("_ItemForm", newItem)
+
+    @{
+        if(@Model != null)
+        {
+            <h3>Items Created by You: </h3>
+
+                <table class="text-center d-flex justify-content-center table table-striped">
+                    <tr>
+                        <th>Item Id: </th>
+                        <th>Category: </th>
+                        <th>Item Name: </th>                    
+                        <th>Item Price: </th>
+                    </tr>
+                    @foreach(Item item in @Model)
+                    {
+                        <tr>
+                            <td>@item.ItemId</td>
+                            <td>@item.Category</td>                        
+                            <td>@item.ItemName</td>                        
+                            <td>$@item.Price</td>
+                        </tr>
+                    }
+                </table>
+        }
+    }
+</body>
 

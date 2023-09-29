@@ -3,31 +3,33 @@
 }
 @model List<Item>
 
-<div class="text-center">
-    <h1 class="display-4">All Unassigned</h1>
-    <a href="/inventory">Dashboard </a> | 
-    <a href="/inventory/create">Create Item</a> | 
-    <a href="/audit/account">Audit Account </a> | 
-    <span>View All Base Items</span> | 
-    <a href="/inventory/assigned/all">View All Assigned</a>
-</div>
+<body class="bg">
+    <div class="text-center">
+        <h1 class="display-4">All Unassigned</h1>
+        <a href="/inventory">Dashboard </a> | 
+        <a href="/inventory/create">Create Item</a> | 
+        <a href="/audit/account">Audit Account </a> | 
+        <span>View All Base Items</span> | 
+        <a href="/inventory/assigned/all">View All Assigned</a>
+    </div>
 
-<table class="text-center d-flex justify-content-center table table-striped">
-    <tr>
-        <th>Item Id: </th>
-        <th>Category: </th>
-        <th>Item Name: </th>                    
-        <th>Item Price: </th>
-        <th>Created by ID:</th>
-    </tr>
-    @foreach(Item item in @Model)
-    {
+    <table class="text-center d-flex justify-content-center table table-striped">
         <tr>
-            <td>@item.ItemId</td>
-            <td>@item.Category</td>                        
-            <td>@item.ItemName</td>                        
-            <td>$@item.Price</td>
-            <td>@item.RoleId</td>
+            <th>Item Id: </th>
+            <th>Category: </th>
+            <th>Item Name: </th>                    
+            <th>Item Price: </th>
+            <th>Created by ID:</th>
         </tr>
-    }
-</table>
+        @foreach(Item item in @Model)
+        {
+            <tr>
+                <td>@item.ItemId</td>
+                <td>@item.Category</td>                        
+                <td>@item.ItemName</td>                        
+                <td>$@item.Price</td>
+                <td>@item.RoleId</td>
+            </tr>
+        }
+    </table>
+</body>

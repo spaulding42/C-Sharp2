@@ -108,3 +108,13 @@ body {
   right: calc(var(--border-size)* -2);
   bottom: calc(var(--border-size)* -2);
 }
+
+.bg{
+  background-image: linear-gradient(45deg, white, gray );
+}
+
+.dashboard-data{
+  margin-left: 30%;
+  margin-bottom: 50px;
+  /* border: 1px solid black; */
+}

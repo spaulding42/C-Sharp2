@@ -1,30 +1,36 @@
 @model User
-<h1>Welcome @Model.FirstName</h1>
+<body class="bg">
 
-<p>Role: @Model.Role</p>
-<p>@Model.Role ID: @Model.RoleId</p>
-<p>Sales Count: @Model.accounts.Count</p>
-<a href="/customer/new">Add Customer</a>
+    <div class="dashboard-data">
+        <h1>Welcome @Model.FirstName</h1>
+
+        <p>Role: @Model.Role</p>
+        <p>@Model.Role ID: @Model.RoleId</p>
+        <p>Sales Count: @Model.accounts.Count</p>
+        <a href="/customer/new" class="btn btn-primary">Add Customer</a>
+
+    </div>
 
 
-<table class="text-center d-flex justify-content-center table table-striped">
-    <tr>
-        <th>AR# </th>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>City</th>
-        <th>State</th>
-        <th>Actions</th>
-    </tr>
-    @foreach(Account accnt in @Model.accounts)
-    {
+    <table class="text-center d-flex justify-content-center table table-striped">
         <tr>
-            <td>@accnt.AccountId</td>
-            <td>@accnt.customer.FirstName</td>
-            <td>@accnt.customer.LastName</td>
-            <td>@accnt.customer.City</td>
-            <td>@accnt.customer.State</td>
-            <td><a href="/account/@accnt.AccountId/view">Details</a></td>
+            <th>AR# </th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>City</th>
+            <th>State</th>
+            <th>Actions</th>
         </tr>
-    }
-</table>
+        @foreach(Account accnt in @Model.accounts)
+        {
+            <tr>
+                <td>@accnt.AccountId</td>
+                <td>@accnt.customer.FirstName</td>
+                <td>@accnt.customer.LastName</td>
+                <td>@accnt.customer.City</td>
+                <td>@accnt.customer.State</td>
+                <td><a href="/account/@accnt.AccountId/view">Details</a></td>
+            </tr>
+        }
+    </table>
+</body>

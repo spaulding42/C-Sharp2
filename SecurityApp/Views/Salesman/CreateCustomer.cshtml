@@ -1,58 +1,60 @@
 @model Customer
 
-<h1 class="text-center">Add Customer</h1>
-<p class="text-center">All fields required</p>
-<form asp-controller="Salesman" asp-action="SubmitCustomer"  method="post" class="create-box">
-    
-    <div class = "d-flex">
-        <label asp-for="FirstName">First Name: </label>
-        <span asp-validation-for="FirstName" style="color: red"></span>
-    </div>
-    <input asp-for="FirstName">
-
-    <div class = "d-flex">
-        <label asp-for="LastName">Last Name: </label>
-        <span asp-validation-for="LastName" style="color:red"></span>
-    </div>
-    <input asp-for="LastName">
-
-    <div class = "d-flex">
-        <label asp-for="BirthDate">Date of Birth: </label>
-        <span asp-validation-for="BirthDate" style="color: red"></span>
-    </div>
-    <input asp-for="BirthDate">    
-
-      
-    <div class = "d-flex">
-        <label asp-for="Line1">Address Line 1: </label>
-        <span asp-validation-for="Line1" style="color: red"></span>
-    </div>
-    <input asp-for="Line1"> 
-    <div class = "d-flex">
-        <label asp-for="Line2">Address Line 2 (Optional): </label>
-        <span asp-validation-for="Line2" style="color: red"></span>
-    </div>
-    <input asp-for="Line2"> 
-
-    <div class = "d-flex">
-        <label asp-for="City">City: </label>
-        <span asp-validation-for="City" style="color: red"></span>
-    </div>
-    <input asp-for="City"> 
-
-    <div class = "d-flex">
-        <label asp-for="State">State: </label>
-        <span asp-validation-for="State" style="color: red"></span>
-    </div>
-    <input asp-for="State"> 
-
-    <div class = "d-flex">
-        <label asp-for="Zip">Zip Code: </label>
-        <span asp-validation-for="Zip" style="color: red"></span>
-    </div>
-    <input asp-for="Zip"> 
-    
+<body class="bg">
+    <h1 class="text-center">Add Customer</h1>
+    <p class="text-center">All fields required</p>
+    <form asp-controller="Salesman" asp-action="SubmitCustomer"  method="post" class="create-box">
         
-        <button type="submit" class="btn btn-primary buttons"> Next </button>
-    </div>
-</form>
+        <div class = "d-flex">
+            <label asp-for="FirstName">First Name: </label>
+            <span asp-validation-for="FirstName" style="color: red"></span>
+        </div>
+        <input asp-for="FirstName">
+
+        <div class = "d-flex">
+            <label asp-for="LastName">Last Name: </label>
+            <span asp-validation-for="LastName" style="color:red"></span>
+        </div>
+        <input asp-for="LastName">
+
+        <div class = "d-flex">
+            <label asp-for="BirthDate">Date of Birth: </label>
+            <span asp-validation-for="BirthDate" style="color: red"></span>
+        </div>
+        <input asp-for="BirthDate">    
+
+        
+        <div class = "d-flex">
+            <label asp-for="Line1">Address Line 1: </label>
+            <span asp-validation-for="Line1" style="color: red"></span>
+        </div>
+        <input asp-for="Line1"> 
+        <div class = "d-flex">
+            <label asp-for="Line2">Address Line 2 (Optional): </label>
+            <span asp-validation-for="Line2" style="color: red"></span>
+        </div>
+        <input asp-for="Line2"> 
+
+        <div class = "d-flex">
+            <label asp-for="City">City: </label>
+            <span asp-validation-for="City" style="color: red"></span>
+        </div>
+        <input asp-for="City"> 
+
+        <div class = "d-flex">
+            <label asp-for="State">State: </label>
+            <span asp-validation-for="State" style="color: red"></span>
+        </div>
+        <input asp-for="State"> 
+
+        <div class = "d-flex">
+            <label asp-for="Zip">Zip Code: </label>
+            <span asp-validation-for="Zip" style="color: red"></span>
+        </div>
+        <input asp-for="Zip"> 
+        
+            
+            <button type="submit" class="btn btn-primary buttons"> Next </button>
+        </div>
+    </form>
+</body>

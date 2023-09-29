@@ -1,90 +1,91 @@
 @model Account
 
-<h1>Account Information:</h1>
+<body class="bg">
+    <h1>Account Information:</h1>
 
-<table class="text-center d-flex table table-striped">
-    <tr>
-        <th>AR# :</th>
-        <th>First Name:</th>
-        <th>Last Name:</th>
-        <th>Address Line 1:</th>
-        <th>Address Line 2:</th>
-        <th>City:</th>
-        <th>State:</th>
-        <th>Zip:</th>
-    </tr>
-    <tr>
-        <td>@Model.AccountId</td>
-        <td>@Model.customer.FirstName</td>
-        <td>@Model.customer.LastName</td>
-        <td>@Model.customer.Line1</td>
-        <td>@Model.customer.Line2</td>
-        <td>@Model.customer.City</td>
-        <td>@Model.customer.State</td>
-        <td>@Model.customer.Zip</td>
-    </tr>
-</table>
-<table class="text-center d-flex table table-striped">
-    <tr>
-        <th>Password:</th>
-        <th>Contract Start:</th>
-        <th>Contract End:</th>
-        <th>RMR:</th>
-        <th>Equipment Maximum:</th>
-        <th>Install Complete:</th>
-    </tr>
-    <tr>
-        <td>@Model.AccountPassword</td>
-        <td>@Model.ContractStart.Month/@Model.ContractStart.Day/@Model.ContractStart.Year</td>
-        <td>@Model.ContractEnd.Month/@Model.ContractEnd.Day/@Model.ContractEnd.Year</td>
-        <td>$@Model.RMR</td>
-        <td>$@Model.EquipmentCost</td>
-        @if(@Model.Installed == true){<td>Yes</td>}else{<td>No</td>}
-    </tr>
-</table>
-<div class="d-flex">
-    <H4>Sales Notes: </H4>
-    <textarea class="notes-box">@Model.SalesNotes</textarea>
-</div>
-<div class="d-flex">
-    <h3>Equipment List: </h3>
-    @* <a href="/equipment/getcategory" class="btn btn-primary">Add Equipment</a> *@
-</div>
-
-<table class="text-center d-flex table table-striped">
-    <tr>
-        <th>Zone Number:</th>
-        <th>Name:</th>
-        <th>Category:</th>
-        <th>Location:</th>
-        <th>Price:</th>
-        <th>Actions:</th>
-    </tr>
-    @foreach(Item item in @Model.ItemList)
-    {
+    <table class="text-center d-flex table table-striped">
         <tr>
-            <td>@item.Zone</td>
-            <td>@item.ItemName</td>
-            <td>@item.Category</td>
-            <td>@item.Location</td>
-            <td>@item.Price</td>
-            
+            <th>AR# :</th>
+            <th>First Name:</th>
+            <th>Last Name:</th>
+            <th>Address Line 1:</th>
+            <th>Address Line 2:</th>
+            <th>City:</th>
+            <th>State:</th>
+            <th>Zip:</th>
         </tr>
+        <tr>
+            <td>@Model.AccountId</td>
+            <td>@Model.customer.FirstName</td>
+            <td>@Model.customer.LastName</td>
+            <td>@Model.customer.Line1</td>
+            <td>@Model.customer.Line2</td>
+            <td>@Model.customer.City</td>
+            <td>@Model.customer.State</td>
+            <td>@Model.customer.Zip</td>
+        </tr>
+    </table>
+    <table class="text-center d-flex table table-striped">
+        <tr>
+            <th>Password:</th>
+            <th>Contract Start:</th>
+            <th>Contract End:</th>
+            <th>RMR:</th>
+            <th>Equipment Maximum:</th>
+            <th>Install Complete:</th>
+        </tr>
+        <tr>
+            <td>@Model.AccountPassword</td>
+            <td>@Model.ContractStart.Month/@Model.ContractStart.Day/@Model.ContractStart.Year</td>
+            <td>@Model.ContractEnd.Month/@Model.ContractEnd.Day/@Model.ContractEnd.Year</td>
+            <td>$@Model.RMR</td>
+            <td>$@Model.EquipmentCost</td>
+            @if(@Model.Installed == true){<td>Yes</td>}else{<td>No</td>}
+        </tr>
+    </table>
+    <div class="d-flex">
+        <H4>Sales Notes: </H4>
+        <textarea class="notes-box">@Model.SalesNotes</textarea>
+    </div>
+    <div class="d-flex">
+        <h3>Equipment List: </h3>
+        @* <a href="/equipment/getcategory" class="btn btn-primary">Add Equipment</a> *@
+    </div>
+
+    <table class="text-center d-flex table table-striped">
+        <tr>
+            <th>Zone Number:</th>
+            <th>Name:</th>
+            <th>Category:</th>
+            <th>Location:</th>
+            <th>Price:</th>
+            <th>Actions:</th>
+        </tr>
+        @foreach(Item item in @Model.ItemList)
+        {
+            <tr>
+                <td>@item.Zone</td>
+                <td>@item.ItemName</td>
+                <td>@item.Category</td>
+                <td>@item.Location</td>
+                <td>@item.Price</td>
+                
+            </tr>
+        }
+    </table>
+    @{
+        float total = 0;
+        foreach(Item item in @Model.ItemList)
+        {
+            total += item.Price;
+        }
     }
-</table>
-@{
-    float total = 0;
-    foreach(Item item in @Model.ItemList)
+    <div>Equipment Total: $@total</div>
+
+    @* @if(verified)
     {
-        total += item.Price;
-    }
-}
-<div>Equipment Total: $@total</div>
-
-@* @if(verified)
-{
-    <form asp-controller="Technician" asp-action="FinishInstall" method="post">
-        <button class="btn btn-primary">Finish Install</button>
-    </form>
-} *@
-
+        <form asp-controller="Technician" asp-action="FinishInstall" method="post">
+            <button class="btn btn-primary">Finish Install</button>
+        </form>
+    } *@
+</body>

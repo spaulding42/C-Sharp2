@@ -1,11 +1,13 @@
 @model User
 
-<h1>Profile Page </h1>
-<h3>Name: @Model.FirstName @Model.LastName</h3>
-<h4>Role: @Model.Role</h4>
-<h4>@Model.Role ID: @Model.RoleId</h4>
-<h4>Email: @Model.Email</h4>
-<h5>Date of Birth: @Model.DoB.Month/@Model.DoB.Day/@Model.DoB.Year</h5>
-<a href="/users/edit" class="btn btn-primary">Edit Profile</a>
-<a href="/users/changepassword"class="btn btn-primary" >Change Password</a>
-<a href="/users/delete/confirm" class="btn btn-danger">Delete User</a>
+<body class="bg">
+    <h1>Profile Page </h1>
+    <h3>Name: @Model.FirstName @Model.LastName</h3>
+    <h4>Role: @Model.Role</h4>
+    <h4>@Model.Role ID: @Model.RoleId</h4>
+    <h4>Email: @Model.Email</h4>
+    <h5>Date of Birth: @Model.DoB.Month/@Model.DoB.Day/@Model.DoB.Year</h5>
+    <a href="/users/edit" class="btn btn-primary">Edit Profile</a>
+    <a href="/users/changepassword"class="btn btn-primary" >Change Password</a>
+    <a href="/users/delete/confirm" class="btn btn-danger">Delete User</a>
+</body>

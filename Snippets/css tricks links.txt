@@ -38,3 +38,7 @@ https://www.youtube.com/watch?v=cH0TC9gWiAg
   right: calc(var(--border-size)* -2);
   bottom: calc(var(--border-size)* -2);
 }
+
+
+//infinite scrolling animation for a menu
+https://www.youtube.com/watch?v=iLmBy-HKIAw
