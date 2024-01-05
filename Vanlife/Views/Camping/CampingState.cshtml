@@ -1,0 +1,107 @@
+@model List<StatePark>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<a href="/camping">All States</a>
+
+<div class="d-flex flex-wrap">
+    <table class="table">
+        <tr>
+            <td>Name</td>
+            <td>Rating</td>
+            <td>Address</td>
+            <td>Coordinates</td>
+        </tr>
+        
+    @{
+        foreach(StatePark park in Model){
+            if(park.name.Contains("State Park"))
+            {
+                string search = park.name;
+                search = search.Replace(" ", "+");
+                Console.WriteLine(search);
+                string fullsearch = $"https://www.google.com/search?q={search}&rlz=1C1CHBF_enUS924US924&oq=rifle+gap+st&aqs=chrome.0.0i355i512j46i175i199i512j69i57j0i512l4j46i512j0i512l2.3761j1j7&sourceid=chrome&ie=UTF-8";
+                <tr>
+                    <td><a href=@fullsearch target="_blank"> @park.name</a></td>
+                    <td>@park.rating</td>
+                    <td>@park.formatted_address</td>
+                    <td>@park.geometry.location.lat , @park.geometry.location.lng</td>
+                </tr>
+                
+            }
+        }
+    }
+    </table>
+</div>
+
+<div>
+    <form id="newlocationform">
+        <input id="location" type="text">
+        <button type="submit" class="btn btn-success btn-block">Submit</button>
+    </form>
+    <div id="map" style="height: 400px; width:400px;"></div>
+    <script>
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: {lat: 37.0902, lng: -95.7128},
+                zoom: 3
+            });
+
+            //listen for click on map
+            google.maps.event.addListener(map, "click", function(event){
+                addMarker({coords: event.latLng});
+            });
+            
+            addMarker({coords: {lat: 39.6264, lng: -111.4396},
+            content: "<h4>Fairview UT</h4><p>lat: 39.6264, lng: -111.4396</p>"})
+            
+            //add marker function
+            function addMarker(props){
+                var marker = new google.maps.Marker({
+                position: props.coords,
+                map:map
+            });
+            
+            if(props.content){
+                var infoWindow = new google.maps.InfoWindow({
+                    content: props.content
+                });
+                marker.addListener("click", function(){
+                    infoWindow.open(map,marker);
+                })
+            }
+            }
+
+            var locationForm = document.getElementById("newlocationform");
+
+        locationForm.addEventListener("submit", geocode)
+
+        function geocode(e){
+                e.preventDefault();
+
+                var location = document.getElementById("location").value;
+
+                axios.get("https://maps.googleapis.com/maps/api/geocode/json", {
+                    params: {
+                        address: location,
+                        key: "AIzaSyB0uYr3e-wIlX5pd0a4VRbVv1G6BMJWG98"
+                    }
+                })
+                .then(function(response){
+                    console.log(response)
+                    console.log(response.data.results[0].formatted_address)
+                    const fullAddy = response.data.results[0].formatted_address
+                    const lat = response.data.results[0].geometry.location.lat
+                    const lng = response.data.results[0].geometry.location.lng
+                    addMarker({coords: {lat: lat, lng: lng},
+                    content: `<h1>${fullAddy}</h1><p>${lat}, ${lng}</p>`})
+                })
+                .catch(function(error){
+                    console.log(error)
+                })
+            }
+        }
+
+         @* geocode(); *@
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcnZEWNHdcd_VssR7mypnycRDNm9OM5qg&callback=initMap"></script>
+</div>

@@ -1,0 +1,101 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Vanlife
+build_property.RootNamespace = Vanlife
+build_property.ProjectDir = c:\Users\MiniMe\Documents\GitHub\C-Sharp2\Vanlife\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = c:\Users\MiniMe\Documents\GitHub\C-Sharp2\Vanlife
+build_property._RazorSourceGeneratorDebug = 
+
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/Vanlife/Views/Activities/Activities.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWN0aXZpdGllc1xBY3Rpdml0aWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/Vanlife/Views/Camping/CampingMain.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcGluZ1xDYW1waW5nTWFpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/Vanlife/Views/Camping/CampingState.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FtcGluZ1xDYW1waW5nU3RhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/Vanlife/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/Vanlife/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/Vanlife/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/Vanlife/Views/Home/RemoteWork.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZW1vdGVXb3JrLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/Vanlife/Views/Posts/AllPosts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHNcQWxsUG9zdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/Vanlife/Views/Posts/ViewOne.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHNcVmlld09uZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/Vanlife/Views/Posts/_NewComment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHNcX05ld0NvbW1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/Vanlife/Views/Posts/_NewPost.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUG9zdHNcX05ld1Bvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/Vanlife/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/Vanlife/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/Vanlife/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/Vanlife/Views/Users/_Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcX0xvZ2luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/Vanlife/Views/Users/_Registeration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcX1JlZ2lzdGVyYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/Vanlife/Views/VanBuilds/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFuQnVpbGRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/Vanlife/Views/VanBuilds/MyVan.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVmFuQnVpbGRzXE15VmFuLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/Vanlife/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/Vanlife/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/Vanlife/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-6hjn3mi2pj

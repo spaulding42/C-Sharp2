@@ -1,0 +1,53 @@
+@model Post
+
+<a href="/posts">All Posts</a>
+
+<div class="card shadow rounded mx-auto w-75 mb-3">
+        <h4 class="card-title text-center bg-dark text-light py-2 rounded-top">
+        Posted by @Model.Author.FirstName @Model.Author.LastName
+        </h4>
+
+        <div class="card-body">
+            <p class="card-text">@Model.Message</p>
+            @{
+                if (Model.ImgUrl != null){
+                    <img src="@Model.ImgUrl" alt="img related to Model" class="card-img-bottom" style="Height: 400px; Width: auto;"/>
+                }
+                if (Model.WebUrl != null){
+                    <a href="@Model.WebUrl">@Model.WebUrl</a>
+                }
+            }
+            <div>
+                <small class="text-muted"> Submitted on: @Model.CreatedAt </small>
+            </div>
+        </div>
+            
+        <div>
+            @foreach (Comment pstComment in Model.PostsComments)
+            {
+                <div class="card shadow rounded mx-auto w-75 mb-3">
+                    <h5 class="card-title text-center bg-dark text-light py-2 rounded-top">
+                        Posted by @pstComment.Author.FirstName @pstComment.Author.LastName</h5>
+                    <div class="card-body">
+                        <p class="card-text">@pstComment.MessageComment</p>
+                        @{
+                            if (pstComment.ImgUrl != null){
+                                <img src="@pstComment.ImgUrl" alt="img related to comment" class="card-img-bottom" style="Height: 200px; Width: auto;"/>
+                            }
+                            if (pstComment.WebUrl != null){
+                                <a href="@pstComment.WebUrl" target="_blank">@pstComment.WebUrl</a>
+                            }
+                        }
+                    </div>
+                </div>
+            }
+            <h4>Post a comment:</h4>
+
+            @{
+                Comment newComment = new Comment();
+                newComment.PostId = Model.PostId;
+            }
+            
+            <partial name="_NewComment" model ="@newComment"></partial>
+        </div>
+    </div>

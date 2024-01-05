@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\SecurityApp.csproj": {}
+    "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\SecurityApp.csproj": {}
   },
   "projects": {
-    "c:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\SecurityApp.csproj": {
+    "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\SecurityApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\SecurityApp.csproj",
+        "projectUniqueName": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\SecurityApp.csproj",
         "projectName": "SecurityApp",
-        "projectPath": "c:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\SecurityApp.csproj",
+        "projectPath": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\SecurityApp.csproj",
         "packagesPath": "C:\\Users\\MiniMe\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\obj\\",
+        "outputPath": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\SecurityApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

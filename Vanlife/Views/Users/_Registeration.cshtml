@@ -1,0 +1,26 @@
+@model User
+<link rel="stylesheet" href="~/css/site.css"/>
+
+<form asp-action="Register" asp-controller="Users" method="post" class="reg-form">
+    <label asp-for="FirstName"></label>
+    <span asp-validation-for="FirstName" style="color:red"></span> 
+    <input asp-for="FirstName" class="d-flex spacing">
+    
+    <label asp-for="LastName"></label>
+    <span asp-validation-for="LastName" style="color:red"></span>
+    <input asp-for="LastName" class="d-flex">
+
+    <label asp-for="Email"></label>
+    <span asp-validation-for="Email" style="color:red"></span> 
+    <input asp-for="Email" class="d-flex">
+
+    <label asp-for="Password"></label>
+    <span asp-validation-for="Password" style="color:red"></span> 
+    <input asp-for="Password" class="d-flex">
+    
+    <label asp-for="ConfirmPassword"></label>
+    <span asp-validation-for="ConfirmPassword" style="color:red"></span> 
+    <input asp-for="ConfirmPassword" class="d-flex">
+        
+    <button type="submit" class="btn btn-success margin-20"> Register </button>
+</form>

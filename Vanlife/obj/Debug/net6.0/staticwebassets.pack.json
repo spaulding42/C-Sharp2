@@ -1,0 +1,725 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Vanlife.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Vanlife.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\AlabamaFinal.json",
+      "PackagePath": "staticwebassets\\AlabamaFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\BackFraming1.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\BackFraming1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\BackFraming2.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\BackFraming2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\BackFraming3.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\BackFraming3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\BackNoBed1.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\BackNoBed1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\Bench1.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\Bench1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\Bench2.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\Bench2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\Bench3.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\Bench3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\BigVent1.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\BigVent1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\BigVent2.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\BigVent2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\CabtoBackLip1.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\CabtoBackLip1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\CabtoBackLip2.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\CabtoBackLip2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\CabtoBackLip3.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\CabtoBackLip3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\CabtoBackLip4.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\CabtoBackLip4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\CeilingFanHole1.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\CeilingFanHole1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\CeilingFanHole2.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\CeilingFanHole2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\CeilingFanHole3.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\CeilingFanHole3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\CeilingFanTaped.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\CeilingFanTaped.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\Couch1.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\Couch1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\CouchBed1.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\CouchBed1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\CouchBed2.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\CouchBed2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\Countertop1.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\Countertop1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\Countertop2.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\Countertop2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\Electrical.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\Electrical.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\EmptyCargo.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\EmptyCargo.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\EmptySelfie.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\EmptySelfie.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\Floor1.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\Floor1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\FoldingBed1.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\FoldingBed1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\FoldingBed2.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\FoldingBed2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\FoldingBed3.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\FoldingBed3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\FoldingBed4.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\FoldingBed4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\FoldingBed5.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\FoldingBed5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\FoldingBed6.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\FoldingBed6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\Insulation1.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\Insulation1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\Kitchen1.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\Kitchen1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\Kitchen2.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\Kitchen2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\Kitchen3.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\Kitchen3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\Kitchen4.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\Kitchen4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\KitchenCAD.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\KitchenCAD.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\KitchenCouch.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\KitchenCouch.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\KitchenFinished1.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\KitchenFinished1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\KitchenFinished2.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\KitchenFinished2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\KitchenPlumbing.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\KitchenPlumbing.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\KitchenSink.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\KitchenSink.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\Lighting.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\Lighting.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\LoungingView.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\LoungingView.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\OutsideCamping.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\OutsideCamping.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\Shiplap1.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\Shiplap1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\SmallFan1.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\SmallFan1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\SmallFan2.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\SmallFan2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\SolarPanels1.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\SolarPanels1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\SolarPanels2.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\SolarPanels2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\Subfloor.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\Subfloor.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\Sunset.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\Sunset.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\SwivelSeats.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\SwivelSeats.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\UnderBedStorage.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\UnderBedStorage.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\VanOutside.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\VanOutside.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\garage1.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\garage1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\MyVanAssets\\garagefull.jpg",
+      "PackagePath": "staticwebassets\\MyVanAssets\\garagefull.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\OtherAssets\\FiberglassBatts.jpg",
+      "PackagePath": "staticwebassets\\OtherAssets\\FiberglassBatts.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\OtherAssets\\Wool-Insulation.jpg",
+      "PackagePath": "staticwebassets\\OtherAssets\\Wool-Insulation.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\OtherAssets\\sparyfoaminsulationforvan.jpg",
+      "PackagePath": "staticwebassets\\OtherAssets\\sparyfoaminsulationforvan.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\OtherAssets\\sprayfoam2.jpg",
+      "PackagePath": "staticwebassets\\OtherAssets\\sprayfoam2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\OtherAssets\\thinsulate.jpg",
+      "PackagePath": "staticwebassets\\OtherAssets\\thinsulate.jpg"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\AlabamaFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\AlabamaFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\AlaskaFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\AlaskaFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\ArizonaFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\ArizonaFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\ArkansasFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\ArkansasFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\CaliforniaFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\CaliforniaFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\ColoradoFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\ColoradoFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\ConnecticutFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\ConnecticutFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\DelawareFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\DelawareFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\FloridaFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\FloridaFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\GeorgiaFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\GeorgiaFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\HawaiiFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\HawaiiFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\IdahoFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\IdahoFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\IllinoisFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\IllinoisFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\IndianaFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\IndianaFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\IowaFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\IowaFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\KansasFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\KansasFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\KentuckyFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\KentuckyFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\LouisianaFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\LouisianaFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\MaineFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\MaineFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\MarylandFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\MarylandFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\MassachusettsFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\MassachusettsFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\MichiganFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\MichiganFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\MinnesotaFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\MinnesotaFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\MississippiFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\MississippiFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\MissouriFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\MissouriFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\MontanaFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\MontanaFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\NationalForests.json",
+      "PackagePath": "staticwebassets\\StateParks\\NationalForests.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\NebraskaFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\NebraskaFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\NevadaFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\NevadaFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\New HampshireFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\New HampshireFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\New JerseyFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\New JerseyFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\New MexicoFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\New MexicoFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\New YorkFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\New YorkFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\North CarolinaFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\North CarolinaFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\North DakotaFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\North DakotaFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\OhioFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\OhioFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\OklahomaFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\OklahomaFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\OregonFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\OregonFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\PennsylvaniaFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\PennsylvaniaFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\Rhode IslandFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\Rhode IslandFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\South CarolinaFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\South CarolinaFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\South DakotaFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\South DakotaFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\TennesseeFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\TennesseeFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\TexasFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\TexasFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\UtahFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\UtahFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\VermontFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\VermontFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\VirginiaFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\VirginiaFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\WashingtonFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\WashingtonFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\West VirginiaFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\West VirginiaFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\WisconsinFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\WisconsinFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\StateParks\\WyomingFinal.json",
+      "PackagePath": "staticwebassets\\StateParks\\WyomingFinal.json"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\MiniMe\\Documents\\GitHub\\C-Sharp2\\Vanlife\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Vanlife.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Vanlife.props",
+      "PackagePath": "build\\Vanlife.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Vanlife.props",
+      "PackagePath": "buildMultiTargeting\\Vanlife.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Vanlife.props",
+      "PackagePath": "buildTransitive\\Vanlife.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

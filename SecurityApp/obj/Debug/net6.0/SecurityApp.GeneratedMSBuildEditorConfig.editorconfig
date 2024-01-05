@@ -9,161 +9,161 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SecurityApp
 build_property.RootNamespace = SecurityApp
-build_property.ProjectDir = c:\Users\MiniMe\Documents\GitHub\C-Sharp2\SecurityApp\
+build_property.ProjectDir = C:\Users\MiniMe\Documents\GitHub\C-Sharp2\SecurityApp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\MiniMe\Documents\GitHub\C-Sharp2\SecurityApp
+build_property.MSBuildProjectDirectory = C:\Users\MiniMe\Documents\GitHub\C-Sharp2\SecurityApp
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Home/Index.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Home/Privacy.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Inventory/AllAssigned.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Inventory/AllAssigned.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XEFsbEFzc2lnbmVkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Inventory/AllUnassigned.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Inventory/AllUnassigned.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XEFsbFVuYXNzaWduZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Inventory/AuditAccount.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Inventory/AuditAccount.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XEF1ZGl0QWNjb3VudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Inventory/CreateItem.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Inventory/CreateItem.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XENyZWF0ZUl0ZW0uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Inventory/InventoryDashboard.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Inventory/InventoryDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XEludmVudG9yeURhc2hib2FyZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Inventory/ViewAccount.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Inventory/ViewAccount.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XFZpZXdBY2NvdW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Inventory/_ItemForm.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Inventory/_ItemForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XF9JdGVtRm9ybS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Inventory/_LookupAccount.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Inventory/_LookupAccount.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW52ZW50b3J5XF9Mb29rdXBBY2NvdW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Salesman/CreateAccount.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Salesman/CreateAccount.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZXNtYW5cQ3JlYXRlQWNjb3VudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Salesman/CreateCustomer.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Salesman/CreateCustomer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZXNtYW5cQ3JlYXRlQ3VzdG9tZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Salesman/EditAccount.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Salesman/EditAccount.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZXNtYW5cRWRpdEFjY291bnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Salesman/EditCustomer.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Salesman/EditCustomer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZXNtYW5cRWRpdEN1c3RvbWVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Salesman/SalesmanDashboard.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Salesman/SalesmanDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZXNtYW5cU2FsZXNtYW5EYXNoYm9hcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Salesman/ViewOneAccount.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Salesman/ViewOneAccount.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2FsZXNtYW5cVmlld09uZUFjY291bnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Shared/Error.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Technician/EditItem.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Technician/EditItem.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVjaG5pY2lhblxFZGl0SXRlbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Technician/NewInstall.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Technician/NewInstall.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVjaG5pY2lhblxOZXdJbnN0YWxsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Technician/NewInstallLookup.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Technician/NewInstallLookup.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVjaG5pY2lhblxOZXdJbnN0YWxsTG9va3VwLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Technician/SelectCategory.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Technician/SelectCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVjaG5pY2lhblxTZWxlY3RDYXRlZ29yeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Technician/SelectItem.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Technician/SelectItem.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVjaG5pY2lhblxTZWxlY3RJdGVtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Technician/TechnicianDashboard.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Technician/TechnicianDashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVjaG5pY2lhblxUZWNobmljaWFuRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Technician/_AddEquipment.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Technician/_AddEquipment.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVjaG5pY2lhblxfQWRkRXF1aXBtZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Users/ChangePassword.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Users/ChangePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Users/DeleteForm.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Users/DeleteForm.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRGVsZXRlRm9ybS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Users/EditProfile.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Users/EditProfile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRWRpdFByb2ZpbGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Users/ForgotPassword.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Users/ForgotPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcRm9yZ290UGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Users/Index.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Users/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Users/NewPassword.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Users/NewPassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcTmV3UGFzc3dvcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Users/Profile.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Users/Profile.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcUHJvZmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Users/ViewUser.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Users/ViewUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcVmlld1VzZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Users/_Login.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Users/_Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcX0xvZ2luLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Users/_Register.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Users/_Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlcnNcX1JlZ2lzdGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/_ViewImports.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/_ViewStart.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Shared/_Layout.cshtml]
+[C:/Users/MiniMe/Documents/GitHub/C-Sharp2/SecurityApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-zauwnvm9ur

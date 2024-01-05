@@ -1,0 +1,33 @@
+@model Comment
+
+<div class="container w-75 mx-auto">
+    <h2 class="text-center">New Comment</h2>
+
+    <form
+        class="shadow p-3 rounded"
+        asp-controller="Posts"
+        asp-action="CreateComment"
+        method="POST"
+    >
+
+        <div class="mb-3">
+        <label asp-for="MessageComment"></label>
+        <span asp-validation-for="MessageComment" class="text-danger font-weight-bold">
+        </span>
+        <textarea class="form-control" name="MessageComment" ></textarea>
+        </div>
+
+        <div class="mb-3">
+        <label asp-for="ImgUrl"></label>
+        <input class="form-control" asp-for="ImgUrl" />
+        </div>
+        <div class="mb-3">
+        <label asp-for="WebUrl"></label>
+        <input class="form-control" asp-for="WebUrl" />
+        </div>
+        
+        <input type="hidden" name="PostId" value="@Model.PostId"/>
+        <a>@Model.PostId</a>
+        <button class="btn btn-success">Comment</button>
+    </form>
+</div>

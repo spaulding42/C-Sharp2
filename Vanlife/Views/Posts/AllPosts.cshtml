@@ -1,0 +1,42 @@
+@model List<Post>
+@{
+    Post newPost = new Post();
+}
+<h1>#Vanlife Posts</h1>
+
+<partial name="_NewPost" model ="@newPost"></partial>
+
+@for (int i= Model.Count-1; i >= 0; i-- ) {
+    string PostColor = Context.Session.GetInt32("UUID") == Model[i].UserId ? "bg-dark": "bg-info"; //if the post is from the user it will change the color of the header
+    <div class="card rounded mx-auto w-75 mb-3">
+        <h4 class="card-title text-center @PostColor text-light py-2 rounded-top">
+        Created by @Model[i].Author.FirstName @Model[i].Author.LastName
+        </h4>
+
+        <div class="card-body">
+            <p class="card-text">@Model[i].Message</p>
+            @{
+                if (Model[i].ImgUrl != null){<img src="@Model[i].ImgUrl" alt="img related to post" class="card-img-bottom" style="Height: 400px; Width: auto;"/>
+                    
+                }
+                if (Model[i].WebUrl != null){
+                    <a href="@Model[i].WebUrl" target="_blank">@Model[i].WebUrl</a>
+                }
+            }
+            <div>
+                <small class="text-muted"> Submitted on: @Model[i].CreatedAt </small>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between">
+            <a href="/posts/@Model[i].PostId">@Model[i].PostsComments.Count Comment(s)</a>
+            @{
+                if(Context.Session.GetInt32("UUID") == Model[i].UserId)
+                {
+                    
+                    <a href="/posts/@Model[i].PostId/delete"> Delete post</a>
+                }
+            }
+
+        </div>
+    </div>
+}

@@ -31,8 +31,16 @@ body {
   width: 300px;
   padding: 20px;
   border:3px solid #0D6EFD;
-  box-shadow: 7px 10px darkblue;
+  box-shadow: 3px 5px darkblue;
   border-radius: 20px;
+  opacity: 0.6;
+  transition: 200ms ease-in-out;
+}
+
+.login-box:hover,
+.login-box:focus{
+  opacity: 1;
+  box-shadow: 7px 10px darkblue;
 }
 
 .buttons{
@@ -118,3 +126,4 @@ body {
   margin-bottom: 50px;
   /* border: 1px solid black; */
 }
+

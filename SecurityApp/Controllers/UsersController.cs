@@ -142,6 +142,7 @@ public class UsersController : Controller
             dbUser.LastName = updatedUser.LastName;
             dbUser.Email = updatedUser.Email;
             dbUser.Role = updatedUser.Role;
+            dbUser.UpdatedAt = DateTime.Now;
             db.Update(dbUser);
             db.SaveChanges();
             return RedirectToAction("UserProfile", "Users");

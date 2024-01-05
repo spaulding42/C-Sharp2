@@ -1,0 +1,15 @@
+@model LoginUser
+<link rel="stylesheet" href="~/css/site.css"/>
+
+<form asp-action="Login" asp-controller="Users" method="post">
+    
+    <label asp-for="LoginEmail"></label>
+    <span asp-validation-for="LoginEmail" style="color:red"></span> 
+    <input asp-for="LoginEmail" class="d-flex">
+
+    <label asp-for="LoginPassword"></label>
+    <span asp-validation-for="LoginPassword" style="color:red"></span> 
+    <input asp-for="LoginPassword" class="d-flex">
+    
+    <button type="submit" class="btn btn-primary margin-20"> Login </button>
+</form>
