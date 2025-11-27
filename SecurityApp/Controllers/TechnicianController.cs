@@ -26,6 +26,9 @@ public class TechnicianController : Controller
         {
             
             List<Account> InstalledAccounts = db.Accounts.Include(c => c.customer).Where(x => x.TechId == HttpContext.Session.GetInt32("UUID")).ToList();
+            foreach(Account InstalledAccount in InstalledAccounts){
+                InstalledAccount.AccountId = InstalledAccount.AccountId + 1000;
+            }
             
             if(InstalledAccounts != null)
             {
@@ -56,6 +59,10 @@ public class TechnicianController : Controller
     [HttpPost("/install/lookup")]
     public IActionResult LookupInstall(ARLookup accountId)
     {
+        if(accountId.ARNum >= 1000)
+        {
+            accountId.ARNum = accountId.ARNum - 1000;
+        }
         if(ModelState.IsValid)
         {
             Account? dbAccount = db.Accounts.Include(c=>c.customer).FirstOrDefault(x => x.AccountId == accountId.ARNum);
@@ -78,7 +85,7 @@ public class TechnicianController : Controller
                 db.Update(dbAccount);
                 db.SaveChanges();
                 List<Item> dbItems = db.Items.Where(i => i.AccountId == dbAccount.AccountId).OrderBy(i=>i.Zone).ToList();
-                dbAccount.ItemList = dbItems;
+                dbAccount.ItemList = dbItems;                
                 return View("NewInstall", dbAccount);
             }
             
@@ -89,7 +96,7 @@ public class TechnicianController : Controller
     [HttpGet("/install/{arNum}/lookup")]
     public IActionResult LookupWithAr(int arNum)
     {
-        Account? dbAccount = db.Accounts.Include(c=>c.customer).FirstOrDefault(x=>x.AccountId == arNum);
+        Account? dbAccount = db.Accounts.Include(c=>c.customer).FirstOrDefault(x=>x.AccountId == arNum-1000);
         if(dbAccount != null && dbAccount.TechId == HttpContext.Session.GetInt32("UUID"))
         {
             HttpContext.Session.SetInt32("Account", dbAccount.AccountId);

@@ -1,5 +1,17 @@
 @model Account
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+<script>
+    $(document).ready(function () {
+        var accountId = $("#AccountId").text();
+        let accntNum = parseInt(accountId, 10);            
+        if(accntNum< 1000){
+            accntNum = 1000 + accntNum;
+            $("#AccountId").text(accntNum);
+        }
+    });
+
+</script>
 <body class="bg">
     <h1>Account Information:</h1>
 
@@ -15,7 +27,7 @@
             <th>Zip:</th>
         </tr>
         <tr>
-            <td>@Model.AccountId</td>
+            <td id="AccountId">@Model.AccountId</td>
             <td>@Model.customer.FirstName</td>
             <td>@Model.customer.LastName</td>
             <td>@Model.customer.Line1</td>

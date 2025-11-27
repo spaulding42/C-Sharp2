@@ -1,3 +1,5 @@
 {
-    "dotnet.defaultSolution": "SecurityApp.sln"
+    "dotnet.defaultSolution": "SecurityApp.sln",
+    "editor.acceptSuggestionOnCommitCharacter": true,
+    "editor.acceptSuggestionOnEnter": "off"
 }
