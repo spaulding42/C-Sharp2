@@ -127,3 +127,55 @@ body {
   /* border: 1px solid black; */
 }
 
+/* full-screen dimmed overlay */
+/* #NewInstallLookupWindow {
+    display: none;                
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);  
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+} */
+
+/* inner popup box */
+/* #NewInstallLookupWindow .popup-content {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    width: 50%;
+    min-width: 300px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+} */
+ #NewInstallLookupWindow {
+    display: none;                
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+
+    display: flex;                /* THIS is the key */
+    justify-content: center;      /* horizontal center */
+    align-items: center;          /* vertical center */
+
+    z-index: 9999;
+}
+
+#NewInstallLookupWindow .popup-content {
+    background: white;
+    padding: 20px 30px;
+    border-radius: 8px;
+    min-width: 300px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.validation-error{
+  color: red;
+  margin: 0px 5px;
+  font-weight: bold;
+}

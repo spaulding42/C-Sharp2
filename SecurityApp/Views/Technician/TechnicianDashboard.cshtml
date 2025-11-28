@@ -1,12 +1,64 @@
 @model User
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        @* $("#NewInstallLookupWindow").hide(); *@
+        $("#OpenLookupPopup").on("click", function () {
+            $("#NewInstallLookupWindow").css("display", "flex").hide().fadeIn(200);
+            $("#error-msg").text("");
+        });
+        
+        $("#ClosePopupBtn").on("click", function () {
+            $("#NewInstallLookupWindow").fadeOut(200);
+        });
+        
+        $("#NewInstallLookupWindow").on("click", function (e) {
+            if (e.target === this) { // only if background clicked
+                $(this).fadeOut(200);
+            }
+        });
+        // When hitting Enter inside the input, trigger the same logic as Next
+        $(".popup-content").on("submit", function (e) {
+            e.preventDefault(); // prevent default form submission
+            $("#LookupNextBtn").click(); // call the same Next click handler
+        });
+
+        $("#LookupNextBtn").on("click", function () {
+            var arNum = $("#ARNum").val().trim();
+
+            $.ajax({
+                url: "/install/lookup",
+                type: "POST",
+                data: { accountId: arNum },   // must match controller parameter name
+                success: function (response) {
+
+                    if (response.success) {
+                        // On success redirect to the new install page
+                        window.location.href = `/install/${arNum}/lookup`;
+                        return;
+                    }
+
+                    // Show validation or server errors
+                    $("#error-msg").text(response.error);
+                },
+                error: function (xhr) {
+                    console.error("AJAX error", xhr);
+                    alert("Unexpected error happened.");
+                }
+            });
+        });
+
+    });
+
+</script>
 
 <body class="bg">
     <h1>Welcome @Model.FirstName</h1>
 
     <p>Role: @Model.Role</p>
     <p>@Model.Role ID: @Model.RoleId</p>
-    <p>Install Count: @Model.accounts.Count</p>
-    <a href="/install/new" class="btn btn-primary">New Install</a>
+    <p>Install Count: @Model.accounts.Count</p>    
+    <button id="OpenLookupPopup" class="btn btn-primary">Lookup Account</button>
 
 
     <table class="text-center d-flex justify-content-center table table-striped">
@@ -30,4 +82,20 @@
             </tr>
         }
     </table>
+
+    <div id="NewInstallLookupWindow" style="display: none;">
+        <form class="popup-content" >
+            <h3>New Install Lookup</h3>
+
+            <label for="ARNum">AR Number</label><span id="error-msg" class="validation-error"></span>
+            <input type="text" name="ARNum" id="ARNum" class="form-control mb-3">
+
+            <div class="buttons">
+                <button id="LookupNextBtn" class="btn btn-success" type="submit">Next</button>
+                <button id="ClosePopupBtn" class="btn btn-secondary">Close</button>
+            </div>
+        </form>
+    </div>
+
 </body>
+

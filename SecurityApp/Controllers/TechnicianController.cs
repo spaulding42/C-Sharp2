@@ -57,23 +57,22 @@ public class TechnicianController : Controller
     }
 
     [HttpPost("/install/lookup")]
-    public IActionResult LookupInstall(ARLookup accountId)
-    {
-        if(accountId.ARNum >= 1000)
-        {
-            accountId.ARNum = accountId.ARNum - 1000;
-        }
+    public IActionResult LookupInstall(int accountId)
+    {        
         if(ModelState.IsValid)
         {
-            Account? dbAccount = db.Accounts.Include(c=>c.customer).FirstOrDefault(x => x.AccountId == accountId.ARNum);
+            Account? dbAccount = db.Accounts.Include(c=>c.customer).FirstOrDefault(x => x.AccountId == accountId - 1000);
                         
             if(dbAccount == null)
             {
                 ModelState.AddModelError("ARNum", "account not found");
+                return Json(new { success = false , error = "account not found" });
             }
             if(dbAccount != null && dbAccount.TechId != null && HttpContext.Session.GetInt32("UUID") != dbAccount.TechId)
             {
                 ModelState.AddModelError("ARNum", "is assigned to a different tech");
+                return Json(new { success = false , error = "is assigned to a different tech" });
+
             }
 
             // if no tech is assigned to the job --OR-- the tech that is assigned is the tech that is logged in then we can proceed
@@ -85,12 +84,12 @@ public class TechnicianController : Controller
                 db.Update(dbAccount);
                 db.SaveChanges();
                 List<Item> dbItems = db.Items.Where(i => i.AccountId == dbAccount.AccountId).OrderBy(i=>i.Zone).ToList();
-                dbAccount.ItemList = dbItems;                
-                return View("NewInstall", dbAccount);
+                dbAccount.ItemList = dbItems;           
+                return Json(new { success = true });
             }
             
         }
-        return View("NewInstallLookup");
+        return Json(new { success = false, error = "Hello World" });
     }
 
     [HttpGet("/install/{arNum}/lookup")]
