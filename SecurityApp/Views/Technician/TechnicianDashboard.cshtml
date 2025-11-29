@@ -27,13 +27,12 @@
             var arNum = $("#ARNum").val().trim();
 
             $.ajax({
-                url: "/install/lookup",
+                url: '@Url.Action("LookupInstall","Technician")',
+                //url: "/install/lookup",
                 type: "POST",
                 data: { accountId: arNum },   // must match controller parameter name
                 success: function (response) {
-
-                    if (response.success) {
-                        // On success redirect to the new install page
+                    if (response.success) {                        
                         window.location.href = `/install/${arNum}/lookup`;
                         return;
                     }
