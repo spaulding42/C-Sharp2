@@ -145,6 +145,11 @@ public class SalesmanController : Controller
     {
         if(ModelState.IsValid)
         {
+            int startAccountId = 1000;
+            int maxAccountId = 9999;
+            var exisingIds = db.Accounts.Where(a=>a.AccountId >= startAccountId && a.AccountId <=maxAccountId).Select(a => a.AccountId).ToList();
+            int nextAccountId = Enumerable.Range(startAccountId,maxAccountId-startAccountId +1).Except(exisingIds).First();
+            NewAccount.AccountId = nextAccountId;
             db.Accounts.Add(NewAccount);
             db.SaveChanges();
             return RedirectToAction("SalesmanDashboard");
