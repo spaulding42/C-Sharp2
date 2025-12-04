@@ -27,7 +27,7 @@ public class TechnicianController : Controller
             
             List<Account> InstalledAccounts = db.Accounts.Include(c => c.customer).Where(x => x.TechId == HttpContext.Session.GetInt32("UUID")).ToList();
             foreach(Account InstalledAccount in InstalledAccounts){
-                InstalledAccount.AccountId = InstalledAccount.AccountId + 1000;
+                InstalledAccount.AccountId = InstalledAccount.AccountId;
             }
             
             if(InstalledAccounts != null)
@@ -61,7 +61,7 @@ public class TechnicianController : Controller
     {        
         if(ModelState.IsValid)
         {
-            Account? dbAccount = db.Accounts.Include(c=>c.customer).FirstOrDefault(x => x.AccountId == accountId - 1000);
+            Account? dbAccount = db.Accounts.Include(c=>c.customer).FirstOrDefault(x => x.AccountId == accountId);
                         
             if(dbAccount == null)
             {
@@ -95,7 +95,7 @@ public class TechnicianController : Controller
     [HttpGet("/install/{arNum}/lookup")]
     public IActionResult LookupWithAr(int arNum)
     {
-        Account? dbAccount = db.Accounts.Include(c=>c.customer).FirstOrDefault(x=>x.AccountId == arNum-1000);
+        Account? dbAccount = db.Accounts.Include(c=>c.customer).FirstOrDefault(x=>x.AccountId == arNum);
         if(dbAccount != null && dbAccount.TechId == HttpContext.Session.GetInt32("UUID"))
         {
             HttpContext.Session.SetInt32("Account", dbAccount.AccountId);
