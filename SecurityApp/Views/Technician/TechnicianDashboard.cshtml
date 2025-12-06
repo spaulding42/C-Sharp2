@@ -52,13 +52,13 @@
 </script>
 
 <body class="bg">
-    <h1>Welcome @Model.FirstName</h1>
-
-    <p>Role: @Model.Role</p>
-    <p>@Model.Role ID: @Model.RoleId</p>
-    <p>Install Count: @Model.accounts.Count</p>    
-    <button id="OpenLookupPopup" class="btn btn-primary">Lookup Account</button>
-
+    <div class="text-center justify-content-center">
+        <h1>Welcome @Model.FirstName</h1>
+        <p>Role: @Model.Role</p>
+        <p>@Model.Role ID: @Model.RoleId</p>
+        <p>Install Count: @Model.accounts.Count</p>    
+        <button id="OpenLookupPopup" class="btn btn-primary">Lookup Account</button>
+    </div>
 
     <table class="text-center d-flex justify-content-center table table-striped">
         <tr>
